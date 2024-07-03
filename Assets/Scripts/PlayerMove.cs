@@ -22,12 +22,10 @@ public class PlayerMove : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
-        // 플레이어 회전
         transform.Rotate(Vector3.up * mouseX);
 
-        // 카메라 피치 조정
         cameraPitch -= mouseY;
-        cameraPitch = Mathf.Clamp(cameraPitch, -90f, 90f);
+        cameraPitch = Mathf.Clamp(cameraPitch, -70f, 70f);
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
 
         Moved();
@@ -35,11 +33,9 @@ public class PlayerMove : MonoBehaviour
 
     void Moved()
     {
-        // 키보드 입력 받기
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
-        // 이동 방향 설정
         Vector3 moveDirection = transform.right * moveX + transform.forward * moveZ;
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
