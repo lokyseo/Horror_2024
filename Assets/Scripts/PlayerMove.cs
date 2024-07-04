@@ -10,11 +10,13 @@ public class PlayerMove : MonoBehaviour
     private CharacterController characterController;
     private Transform playerCamera;
     private float cameraPitch = 0f;
+    
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         playerCamera = Camera.main.transform;
+
     }
 
     void Update()
