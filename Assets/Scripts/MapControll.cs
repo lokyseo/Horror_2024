@@ -58,13 +58,13 @@ public class MapControll : MonoBehaviour
     void LoadingMap()
     {
         frontMap = map_Prefab[currentNumber + 1];
-        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, 30);
+        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, 100);
         frontMap.SetActive(true);
 
         if(currentNumber != 0)
         {
             backMap = map_Prefab[currentNumber - 1];
-            backMap.transform.localPosition = currentMap.transform.localPosition - new Vector3(0, 0, 30);
+            backMap.transform.localPosition = currentMap.transform.localPosition - new Vector3(0, 0, 100);
             backMap.SetActive(true);
         }
 
@@ -82,6 +82,7 @@ public class MapControll : MonoBehaviour
             backMap.SetActive(false);
 
             currentMap = other.transform.parent.gameObject;
+            
             currentNumber++;
 
             LoadingMap();

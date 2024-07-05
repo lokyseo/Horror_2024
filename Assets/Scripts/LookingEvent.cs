@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class LookingEvent : MonoBehaviour
 {
     bool isLookingAtObject;
@@ -53,13 +52,11 @@ public class LookingEvent : MonoBehaviour
     void OnLookAtObject()
     {
 
-        Debug.Log("Looking at the object!");
     }
 
     void OnLookAwayFromObject()
     {
 
-        Debug.Log("Stopped looking at the object!");
     }
 
 }
