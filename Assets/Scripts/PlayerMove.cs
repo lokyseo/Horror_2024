@@ -12,8 +12,6 @@ public class PlayerMove : MonoBehaviour
     private float cameraPitch = 0f;
     public bool isCarRide;
 
-
-
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -22,7 +20,6 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-
         Moved();
 
 

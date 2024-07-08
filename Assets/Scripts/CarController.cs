@@ -28,14 +28,12 @@ public class CarController : MonoBehaviour
 
             player_Object.transform.position = transform.position + new Vector3(5,0,0);
             player_Object.transform.SetParent(null);
-            //player_Object.transform.rotation =  Quaternion.Euler(0, 0, 0);
-            //Camera.main.transform.rotation = Quaternion.Euler(0, 0, 0);
             player_Object.transform.GetComponent<CharacterController>().enabled = true;
             player_Object.transform.GetComponent<PlayerMove>().enabled = true;
             transform.GetComponent<CarController>().enabled = false;
         }
-        float moveHorizontal = Input.GetAxis("Horizontal"); // A, D 키 입력
-        float moveVertical = Input.GetAxis("Vertical"); // W, S 키 입력
+        float moveHorizontal = Input.GetAxis("Horizontal"); 
+        float moveVertical = Input.GetAxis("Vertical"); 
 
         Vector3 movement = transform.forward * moveVertical * speed * Time.deltaTime;
         rb.MovePosition(rb.position + movement);

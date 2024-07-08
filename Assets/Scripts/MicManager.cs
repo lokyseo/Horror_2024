@@ -1,36 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class MicManager : MonoBehaviour
 {
-    public string microphoneName = null;
     public AudioSource audioSource;
     public int sampleWindow = 128;
+    public Slider test;
 
     void Start()
     {
-        // 오디오 소스가 설정되지 않았다면 현재 객체에서 AudioSource 컴포넌트를 가져옵니다.
-        if (audioSource == null)
-        {
-            audioSource = GetComponent<AudioSource>();
-        }
 
         // 마이크를 시작하고 오디오 소스에 할당합니다.
-        audioSource.clip = Microphone.Start(microphoneName, true, 10, 44100);
+        audioSource.clip = Microphone.Start(Microphone.devices[0].ToString(), true, 10, 44100);
         audioSource.loop = true;
 
         // 마이크가 시작될 때까지 대기합니다.
-        while (!(Microphone.GetPosition(microphoneName) > 0)) { }
+        while (!(Microphone.GetPosition(Microphone.devices[0].ToString()) > 0)) { }
 
-        audioSource.Play();
+        //audioSource.Play();
+    }
+    private void FixedUpdate()
+    {
+        float volume = GetMaxVolume();
+
+        if (volume > test.maxValue)
+        {
+            test.value = 0.5f;
+            Debug.Log("Mic Volume: " + volume);
+
+        }
+        else
+        {
+            test.value = volume;
+
+        }
     }
 
     void Update()
     {
-        // 마이크 음량 측정
-        float volume = GetMaxVolume();
-        Debug.Log("Mic Volume: " + volume);
+        
     }
 
     float GetMaxVolume()
@@ -43,7 +54,6 @@ public class MicManager : MonoBehaviour
 
         audioSource.clip.GetData(waveData, micPosition);
 
-        // 각 샘플 데이터의 절대값 중 최대값을 찾습니다.
         for (int i = 0; i < sampleWindow; i++)
         {
             float wavePeak = waveData[i] * waveData[i];
