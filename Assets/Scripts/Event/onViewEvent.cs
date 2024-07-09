@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
+using static UnityEngine.GraphicsBuffer;
 
 public class onViewEvent : MonoBehaviour
 {
@@ -46,7 +47,8 @@ public class onViewEvent : MonoBehaviour
             }
             else
             {
-                this.gameObject.transform.localPosition = Vector3.Lerp(gameObject.transform.position, player_Object.transform.position, 0.1f * Time.deltaTime);
+                transform.position = Vector3.Lerp(transform.position,
+                    new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), 1.0f * Time.deltaTime);
             }
         }
     }
