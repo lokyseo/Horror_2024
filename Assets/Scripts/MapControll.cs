@@ -27,6 +27,8 @@ public class MapControll : MonoBehaviour
 
         frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, 30);
         frontMap.SetActive(true);
+
+        RenderSettings.ambientLight = Color.black;
     }
 
     void Update()

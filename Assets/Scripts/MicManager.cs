@@ -13,11 +13,9 @@ public class MicManager : MonoBehaviour
     void Start()
     {
 
-        // 마이크를 시작하고 오디오 소스에 할당합니다.
         audioSource.clip = Microphone.Start(Microphone.devices[0].ToString(), true, 10, 44100);
         audioSource.loop = true;
 
-        // 마이크가 시작될 때까지 대기합니다.
         while (!(Microphone.GetPosition(Microphone.devices[0].ToString()) > 0)) { }
 
         //audioSource.Play();
@@ -39,10 +37,6 @@ public class MicManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-    }
 
     float GetMaxVolume()
     {

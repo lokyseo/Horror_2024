@@ -2,23 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
 public class onViewEvent : MonoBehaviour
 {
-    public UnityEvent onBecameVisible;   // 뷰 안에 들어왔을 때 실행할 이벤트
-    public UnityEvent onBecameInvisible; // 뷰 밖으로 나갔을 때 실행할 이벤트
+    public Camera mainCamera;
+    bool isEnter;
+    bool isExit;
+    GameObject player_Object;
 
-    // 오브젝트가 카메라 뷰 안에 들어올 때 호출됨
-    void OnBecameVisible()
+    void Start()
     {
-        onBecameVisible?.Invoke();
-        Debug.Log("오브젝트가 카메라 뷰 안에 들어왔습니다.");
+        isEnter = false;
+        isExit = false;
+        player_Object = GameObject.FindWithTag("Player");
     }
 
-    // 오브젝트가 카메라 뷰 밖으로 나갈 때 호출됨
-    void OnBecameInvisible()
+    void Update()
     {
-        onBecameInvisible?.Invoke();
-        Debug.Log("오브젝트가 카메라 뷰 밖으로 나갔습니다.");
+        if (IsObjectVisible(GetComponent<Renderer>(), mainCamera))
+        {
+            isExit = false;
+            if (!isEnter)
+            {
+                isEnter = true;
+                Debug.Log(gameObject.name + " 들어옴");
+
+            }
+            else
+            {
+                
+            }
+
+        }
+        else
+        {
+            isEnter = false;
+            if (!isExit)
+            {
+                isExit = true;
+                Debug.Log(gameObject.name + " 나감");
+
+            }
+            else
+            {
+                this.gameObject.transform.localPosition = Vector3.Lerp(gameObject.transform.position, player_Object.transform.position, 0.1f * Time.deltaTime);
+            }
+        }
+    }
+
+    bool IsObjectVisible(Renderer renderer, Camera camera)
+    {
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(camera);
+        return GeometryUtility.TestPlanesAABB(planes, renderer.bounds);
     }
 }
