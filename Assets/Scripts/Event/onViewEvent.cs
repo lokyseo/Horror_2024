@@ -48,7 +48,7 @@ public class onViewEvent : MonoBehaviour
             else
             {
                 transform.position = Vector3.Lerp(transform.position,
-                    new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), 1.0f * Time.deltaTime);
+                    new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), 1.5f * Time.deltaTime);
             }
         }
     }
