@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -10,7 +12,16 @@ public class PlayerMove : MonoBehaviour
     private CharacterController characterController;
     private Transform playerCamera;
     private float cameraPitch = 0f;
-    public bool isCarRide;
+
+    //중력
+    private float gravity = 9.8f;
+    private float verticalVelocity = 0.0f;
+    private Vector3 moveDirection = Vector3.zero;
+
+    public Slider sound_Slider;
+    bool isMoving;
+
+    public GameObject flashLight;
 
     void Start()
     {
@@ -22,7 +33,25 @@ public class PlayerMove : MonoBehaviour
     {
         Moved();
 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            flashLight.SetActive(!flashLight.activeSelf);
 
+        }
+
+
+            if (characterController.isGrounded)
+        {
+            verticalVelocity = 0.0f;
+        }
+        else
+        {
+            verticalVelocity -= gravity * Time.deltaTime;
+        }
+
+        moveDirection.y = verticalVelocity;
+
+        characterController.Move(moveDirection * Time.deltaTime);
     }
 
     void Moved()
@@ -40,6 +69,7 @@ public class PlayerMove : MonoBehaviour
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
 
         Vector3 moveDirection = transform.right * moveX + transform.forward * moveZ;
+        isMoving = moveDirection.x != 0 || moveDirection.z != 0;
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
 
@@ -59,6 +89,26 @@ public class PlayerMove : MonoBehaviour
                 hit.transform.GetComponent<CarController>().enabled = true;
 
             }
+        }
+
+        if(hit.gameObject.tag == "Trap")
+        {
+            //애니메이션 재생
+        }
+
+        if(hit.gameObject.tag == "DangerZone")
+        {
+            if(isMoving)
+            {
+                sound_Slider.value += 0.005f;
+            }
+            else
+            {
+                sound_Slider.value -= 0.001f;
+
+            }
+            //사운드 재생
+            Debug.Log("바스락바스락");
         }
     }
 }
