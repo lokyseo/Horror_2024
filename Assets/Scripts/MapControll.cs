@@ -33,10 +33,10 @@ public class MapControll : MonoBehaviour
 
     void Update()
     {
-        if (!isSceneClear)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneFailed();
-            isSceneClear = true;
+           // isSceneClear = true;
         }
 
     }
@@ -44,17 +44,20 @@ public class MapControll : MonoBehaviour
     void SceneFailed()
     {
         currentNumber = 0;
+
         backMap.SetActive(false);
         currentMap.SetActive(false);
         frontMap.SetActive(false);
+
         backMap = map_Prefab[0];
         backMap.SetActive(true);
         currentMap = map_Prefab[1];
         currentMap.SetActive(true) ;
         frontMap = map_Prefab[2];
         frontMap.SetActive(true) ;
-        player_Object.transform.localPosition = new Vector3(map_Prefab[0].transform.localPosition.x, transform.localPosition.y, map_Prefab[0].transform.position.z);
 
+        transform.position = 
+            new Vector3(backMap.transform.position.x, transform.position.y + 1.5f, backMap.transform.position.z);
     }
 
     void LoadingMap()

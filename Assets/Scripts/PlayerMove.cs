@@ -86,6 +86,7 @@ public class PlayerMove : MonoBehaviour
                 transform.SetParent(hit.transform);
                 transform.GetComponent<CharacterController>().enabled = false;
                 transform.GetComponent<PlayerMove>().enabled = false;
+                hit.transform.GetComponent<MapControll>().enabled = true;
                 hit.transform.GetComponent<CarController>().enabled = true;
 
             }

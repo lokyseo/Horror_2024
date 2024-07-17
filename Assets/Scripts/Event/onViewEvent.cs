@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -11,7 +12,7 @@ public class onViewEvent : MonoBehaviour
     bool isEnter;
     bool isExit;
     GameObject player_Object;
-
+    public AudioSource footSound;
     void Start()
     {
         isEnter = false;
@@ -27,12 +28,12 @@ public class onViewEvent : MonoBehaviour
             if (!isEnter)
             {
                 isEnter = true;
-                Debug.Log(gameObject.name + " µé¾î¿È");
-
+                this.GetComponentInChildren<Animator>().enabled = false;
             }
             else
             {
-                
+                footSound.Stop();
+
             }
 
         }
@@ -42,13 +43,19 @@ public class onViewEvent : MonoBehaviour
             if (!isExit)
             {
                 isExit = true;
-                Debug.Log(gameObject.name + " ³ª°¨");
-
+                this.GetComponentInChildren<Animator>().enabled = true;
             }
             else
             {
                 transform.position = Vector3.Lerp(transform.position,
-                    new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), 1.2f * Time.deltaTime);
+                    new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), 0.7f * Time.deltaTime);
+                if(Vector3.Distance(player_Object.transform.position, transform.position) < 50.0f)
+                {
+                    if(!footSound.isPlaying)
+                    {
+                        footSound.Play();
+                    }
+                }
             }
         }
     }
