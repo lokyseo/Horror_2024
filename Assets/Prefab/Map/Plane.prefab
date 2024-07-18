@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3695843490881567950}
   - component: {fileID: 1837558867125212706}
   - component: {fileID: 2973963438140957463}
+  - component: {fileID: 2456342555793931878}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 31868224552012252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -140}
   m_LocalScale: {x: 5, y: 5, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -112,6 +113,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2456342555793931878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31868224552012252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e77b360d11cce4a9e3d53554d0958a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 4852118063678833073}
+  blinkTime: 0
+  randTime: 0
+  onTime: 0
+  isLightOn: 0
 --- !u!1 &689225682141910943
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +175,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.70558673, b: 0.5235849, a: 1}
-  m_Intensity: 75
+  m_Intensity: 500
   m_Range: 50
   m_SpotAngle: 81.26405
   m_InnerSpotAngle: 50.317272
