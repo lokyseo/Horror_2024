@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: f4f35ac7e1beca540b46276104f1e3ef
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 004_Light_A_Mat__Env_Default
+    second: {fileID: 2100000, guid: d401f8643fd164e4bb9272e7dadd7a99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_interior_hanging_light_1_dm_Mat
+    second: {fileID: 2100000, guid: cfd33534c10eca441b73d0dd926c490f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Flashlight_a
+    second: {fileID: 2800000, guid: 430b756c5ca554c47a6c4c966ee716c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Flashlight_n
+    second: {fileID: 2800000, guid: f92cc5439f2f9454c8652f8173854905, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FluorescentHangingLight_Color2
+    second: {fileID: 2800000, guid: 07806fc1eb2bd7945a07ce239a4e132c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FluorescentHangingLight_Emiss_2
+    second: {fileID: 2800000, guid: 0a8cf923f85d7384aa351b70f075ceeb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FluorescentHangingLight_Normal
+    second: {fileID: 2800000, guid: 62ab6d64121067a4bac944be4209cee7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Industrial_light_1_Diff
+    second: {fileID: 2800000, guid: f14469a40876d4148866ec1c2769f212, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Industrial_light_1_Norm
+    second: {fileID: 2800000, guid: 85eb9799714eb7d4681d03d30554077b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lamp_a
+    second: {fileID: 2800000, guid: 21a4bf466c166444b9dbb8b4530e23b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lamp_n
+    second: {fileID: 2800000, guid: cad0e4a603703eb49b69bc68c7264397, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RC_UtilityLight_Diff
+    second: {fileID: 2800000, guid: 7d7371adbd444ab40a25d38e7b05f726, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RC_UtilityLight_Emis
+    second: {fileID: 2800000, guid: d5ee4a62f742aaa438993fc5211cb378, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RC_UtilityLight_Norm
+    second: {fileID: 2800000, guid: 016747718107e284280638d4c4cb97cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SM_flashlight_a_01_lp_DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: 4efb70d7f103e0d4786404a6ed90e1c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SM_flashlight_a_01_lp_DefaultMaterial_Normal
+    second: {fileID: 2800000, guid: 780cbd3ac091c704592168d493bb5c2a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TX_KitchenLight_01a_ALB
+    second: {fileID: 2800000, guid: c25b3a51ab313e94ab0894a6d80fb18c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TX_KitchenLight_01a_NRM
+    second: {fileID: 2800000, guid: 30675cb3b9382b049b4da40c87d31211, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TX_Light_CageShip_D
+    second: {fileID: 2800000, guid: 2cd91be47889e4f46ab401adc6aac5f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TX_Light_CageShip_N
+    second: {fileID: 2800000, guid: 1acf8dddda8ade943ac24d8d8ecde580, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_Halogen_Lamp_D
+    second: {fileID: 2800000, guid: 8a691b765167fc147a0db18a23adf0db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_Halogen_Lamp_N
+    second: {fileID: 2800000, guid: 2fa112975e15a5a40be35cdd55689d36, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_Lightsource_Pole_Tall_01_D
+    second: {fileID: 2800000, guid: 4114116d43aaa584bb344ef67be169a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_Lightsource_Pole_Tall_01_N
+    second: {fileID: 2800000, guid: c7147218f2a304144a02df2004a812da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_streetlamp_D
+    second: {fileID: 2800000, guid: 45983e45d1fc01f4c8fb0bf48f6210ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_streetlamp_N
+    second: {fileID: 2800000, guid: 85f9d249eab8e1e4bb982bf5f1d87703, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: base_interior_hanging_light_1_dm
+    second: {fileID: 2800000, guid: c0bbfd0b415bfba4893e27010fd31f29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: base_interior_hanging_light_1_nm
+    second: {fileID: 2800000, guid: 78f0dc1f9e5feb445b2ddf4cf55c5b05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_building_exterior_light_1_dm
+    second: {fileID: 2800000, guid: a8b106805fac9d84499145d9797442b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_building_exterior_light_1_nm
+    second: {fileID: 2800000, guid: de2c2ab5c59d51d4399285c915a30c31, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_building_exterior_light_2_dm
+    second: {fileID: 2800000, guid: c5c7930bd5a96ec4ba24cc6e70a51e0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_building_exterior_light_2_nm
+    second: {fileID: 2800000, guid: bcc7b3a979d8cb74ca2d819a25396965, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_building_exterior_light_3_dm
+    second: {fileID: 2800000, guid: 2b5e6901cb9075947b07417de6125b91, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_building_exterior_light_3_nm
+    second: {fileID: 2800000, guid: ae739cea87cecfc47bd1fcd4632a4ad0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_lightpost03_dm
+    second: {fileID: 2800000, guid: c5553fd00e9bfbd41aa9ab5537f58418, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: city_lightpost03_nm
+    second: {fileID: 2800000, guid: 3b7a23f698480144eb122aa385eebd76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_bare_01_000_albm
+    second: {fileID: 2800000, guid: da8b69db002bb7140b2b38993749bb66, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: props_lamp_arc_discharge
+    second: {fileID: 2800000, guid: ec282879ec3cb0943b3d26800310a21b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: searchligh_NM
+    second: {fileID: 2800000, guid: a9fdfc7d673640343b84c7ecc30196b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: searchlight_BC
+    second: {fileID: 2800000, guid: 63cf75642b047e74eb20a16d19670dbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: searchlight_prn_as_d
+    second: {fileID: 2800000, guid: 0cbbcc7d9649e0b4e9e83da3e2fad8af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: searchlight_prn_as_n
+    second: {fileID: 2800000, guid: 18ec358959243a3489905a60ee672cbb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_004_light_a_albm
+    second: {fileID: 2800000, guid: 4be3cdeeb98224e4d88eabf367d91559, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_010_walllight_a_albm
+    second: {fileID: 2800000, guid: 791e66832db52674f8299f049b30c3a9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_019_insectlighttrap_a_albd
+    second: {fileID: 2800000, guid: 52a50c5c48bc9664ca4dc2d270489d79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_019_insectlighttrap_a_nrrc
+    second: {fileID: 2800000, guid: df15b6a3d90e26f44b580f35539f0edd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_019_insectlighttrap_b_nrrc
+    second: {fileID: 2800000, guid: 46f8eef8ae77882479f7ddfd33cfaf39, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_019_insectlighttrap_c_albd
+    second: {fileID: 2800000, guid: 11483cb3f7c051a42a7eb2a4212b1882, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_019_insectlighttrap_c_nrrc
+    second: {fileID: 2800000, guid: a5564addc414e564d8d20d579300b0d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_051_lightwall_albd
+    second: {fileID: 2800000, guid: c5b940a3d33e3464b84dcf4eb23c6766, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_051_lightwall_nrrc
+    second: {fileID: 2800000, guid: cf4b0dadaec52f94a85d050d58d36d00, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_054_lightwall_a_albd
+    second: {fileID: 2800000, guid: a5db97b8200a6604cb5a8f103d79d30c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_054_lightwall_a_nrrc
+    second: {fileID: 2800000, guid: 75bc57b5c89e4364d8c43e26ba0ee867, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_059_fluorescentlight_albd
+    second: {fileID: 2800000, guid: b1a1e4133082ed443ac1f2965de65eb0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_059_fluorescentlight_nrrc
+    second: {fileID: 2800000, guid: a1197cf55f1255d4fb8e8279bbbe3415, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_060_roundlight_a_albd
+    second: {fileID: 2800000, guid: 67b5127dce56328469ed2a20611f46ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_060_roundlight_a_nrmr
+    second: {fileID: 2800000, guid: f886453a85ff13d469891f5280334ecb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_065_fluorescentlight_albd
+    second: {fileID: 2800000, guid: 960386dfbe2194747aafbab07893d2ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_065_fluorescentlight_nrrc
+    second: {fileID: 2800000, guid: d76c2cb96701bc547a95e18a0e8ef990, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_204_hangingfluorescentlamp_b_albm
+    second: {fileID: 2800000, guid: 105b229e4f03c394a94764f8cf0535cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_204_hangingfluorescentlamp_c_albm
+    second: {fileID: 2800000, guid: 4341842a2df80474397c2b5c7c4e1c95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sm40_206_pendantlamp_a_albm
+    second: {fileID: 2800000, guid: 40ffdb9dfd085744bb0ad19f090d3879, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: standart_lightpost_1_dm
+    second: {fileID: 2800000, guid: 2153af4b79579234a83aafecb405e774, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: standart_lightpost_1_nm
+    second: {fileID: 2800000, guid: 5673355045fd6884c89702d0fa543fcd, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
