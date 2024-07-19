@@ -6,6 +6,7 @@ public class MapControll : MonoBehaviour
 {
     GameObject player_Object;
 
+    public GameObject totalMapPrefab;
     public GameObject[] map_Prefab;
 
     GameObject currentMap;
@@ -14,9 +15,16 @@ public class MapControll : MonoBehaviour
 
     public bool isSceneClear;
     int currentNumber;
-
+    private void Awake()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            map_Prefab[i] = totalMapPrefab.transform.GetChild(i).gameObject;
+        }
+    }
     void Start()
     {
+   
         currentNumber = 0;
         isSceneClear = true;
         player_Object = GameObject.FindWithTag("Player");
@@ -25,7 +33,7 @@ public class MapControll : MonoBehaviour
         frontMap = map_Prefab[currentNumber + 1];
         backMap = map_Prefab[8];
 
-        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, 30);
+        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, currentMap.GetComponentInChildren<MeshRenderer>().bounds.size.z);
         frontMap.SetActive(true);
 
         RenderSettings.ambientLight = Color.black;
@@ -63,13 +71,13 @@ public class MapControll : MonoBehaviour
     void LoadingMap()
     {
         frontMap = map_Prefab[currentNumber + 1];
-        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, 100);
+        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, currentMap.GetComponentInChildren<MeshRenderer>().bounds.size.z);
         frontMap.SetActive(true);
 
         if(currentNumber != 0)
         {
             backMap = map_Prefab[currentNumber - 1];
-            backMap.transform.localPosition = currentMap.transform.localPosition - new Vector3(0, 0, 100);
+            backMap.transform.localPosition = currentMap.transform.localPosition - new Vector3(0, 0, currentMap.GetComponentInChildren<MeshRenderer>().bounds.size.z);
             backMap.SetActive(true);
         }
 

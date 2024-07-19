@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightControll : MonoBehaviour
 {
-    public Light light;
+    public GameObject maplight;
 
     public float blinkTime;
     public float randTime;
@@ -22,14 +22,14 @@ public class LightControll : MonoBehaviour
 
     void Update()
     {
-        if (light.gameObject.activeSelf)
+        if (maplight.gameObject.activeSelf)
         {
             onTime -= Time.deltaTime;
 
             if(onTime < 0)
             {
                 onTime = 0.3f;
-                light.gameObject.SetActive(false);
+                maplight.gameObject.SetActive(false);
             }
 
         }
@@ -42,7 +42,7 @@ public class LightControll : MonoBehaviour
                 randTime = Random.Range(0, 1.3f);
 
                 blinkTime = randTime;
-                light.gameObject.SetActive(true);
+                maplight.gameObject.SetActive(true);
             }
         }
 

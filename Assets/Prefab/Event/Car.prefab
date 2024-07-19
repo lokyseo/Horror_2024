@@ -161,14 +161,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5292e901d5378a4d8cc33bddb9b9ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalMapPrefab: {fileID: 0}
   map_Prefab:
-  - {fileID: 31868224552012252, guid: 25d86bcd4839d984e87299e3076beb2a, type: 3}
-  - {fileID: 31868224552012252, guid: 9be10df978e338c4a8b325c3aa0c9400, type: 3}
-  - {fileID: 31868224552012252, guid: 99e213fe63a7fa1478ab656e2db23221, type: 3}
-  - {fileID: 31868224552012252, guid: edf300a5df81def42a63cad0a4e08e67, type: 3}
-  - {fileID: 31868224552012252, guid: 591d96fd5546ed4469442db09d159f23, type: 3}
-  - {fileID: 31868224552012252, guid: 1f7edd5121359264e80aed56bf91652b, type: 3}
-  - {fileID: 31868224552012252, guid: 4d64a42cdb70bf34284ca22177e19982, type: 3}
-  - {fileID: 31868224552012252, guid: 788359c065c9c28458e477783bfeb3a9, type: 3}
-  - {fileID: 31868224552012252, guid: 0c72948a22112a04aa761c5cd24702db, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   isSceneClear: 0

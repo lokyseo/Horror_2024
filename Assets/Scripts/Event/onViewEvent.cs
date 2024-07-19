@@ -49,7 +49,8 @@ public class onViewEvent : MonoBehaviour
             {
                 transform.position = Vector3.Lerp(transform.position,
                     new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), 0.7f * Time.deltaTime);
-                if(Vector3.Distance(player_Object.transform.position, transform.position) < 50.0f)
+                transform.LookAt(player_Object.transform.position);
+                if(Vector3.Distance(player_Object.transform.position, transform.position) < 20.0f)
                 {
                     if(!footSound.isPlaying)
                     {
