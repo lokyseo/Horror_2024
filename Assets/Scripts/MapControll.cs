@@ -25,7 +25,7 @@ public class MapControll : MonoBehaviour
         frontMap = map_Prefab[currentNumber + 1];
         backMap = map_Prefab[8];
 
-        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, 30);
+        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, currentMap.GetComponentInChildren<MeshRenderer>().bounds.size.z);
         frontMap.SetActive(true);
 
         RenderSettings.ambientLight = Color.black;
@@ -63,13 +63,13 @@ public class MapControll : MonoBehaviour
     void LoadingMap()
     {
         frontMap = map_Prefab[currentNumber + 1];
-        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, 100);
+        frontMap.transform.localPosition = currentMap.transform.localPosition + new Vector3(0, 0, currentMap.GetComponentInChildren<MeshRenderer>().bounds.size.z);
         frontMap.SetActive(true);
 
         if(currentNumber != 0)
         {
             backMap = map_Prefab[currentNumber - 1];
-            backMap.transform.localPosition = currentMap.transform.localPosition - new Vector3(0, 0, 100);
+            backMap.transform.localPosition = currentMap.transform.localPosition - new Vector3(0, 0, currentMap.GetComponentInChildren<MeshRenderer>().bounds.size.z);
             backMap.SetActive(true);
         }
 

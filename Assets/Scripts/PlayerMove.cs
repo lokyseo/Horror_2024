@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float moveSpeed = 10f;
+    float moveSpeed;
     public float mouseSensitivity = 2f;
 
     private CharacterController characterController;
@@ -23,24 +23,44 @@ public class PlayerMove : MonoBehaviour
 
     public GameObject flashLight;
 
+    public Slider stamina_Slider;
+    bool isStaminaDown;
+    float staminaCoolTime;
+
+    //오디오 리소스
+    public AudioSource footSound;
+    public AudioSource leafFootSound;
+
     void Start()
     {
+        moveSpeed = 10f;
+
         characterController = GetComponent<CharacterController>();
         playerCamera = Camera.main.transform;
+        isStaminaDown = false;
+
+        staminaCoolTime = 4.0f;
     }
 
     void Update()
     {
         Moved();
+        
+        GravityAndFlashLight();
+        
 
+
+    }
+
+    void GravityAndFlashLight()
+    {
         if (Input.GetKeyDown(KeyCode.C))
         {
             flashLight.SetActive(!flashLight.activeSelf);
 
         }
 
-
-            if (characterController.isGrounded)
+        if (characterController.isGrounded)
         {
             verticalVelocity = 0.0f;
         }
@@ -70,6 +90,55 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 moveDirection = transform.right * moveX + transform.forward * moveZ;
         isMoving = moveDirection.x != 0 || moveDirection.z != 0;
+
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            if(!isStaminaDown && isMoving)
+            {
+                moveSpeed = 15.0f;
+                stamina_Slider.value -= 0.1f;
+                footSound.pitch = 1.5f;
+
+                if(stamina_Slider.value <= 0)
+                {
+                    isStaminaDown = true;
+                    moveSpeed = 0;
+                }
+            }
+            
+        }
+        else
+        {
+            if (!isStaminaDown && isMoving)
+            {
+                moveSpeed = 10.0f;
+                footSound.pitch = 1.0f;
+            }
+            stamina_Slider.value += 0.02f;
+        }
+
+        if(isStaminaDown)
+        {
+            footSound.Stop();
+            staminaCoolTime -= Time.deltaTime;
+            if(staminaCoolTime <=0)
+            {
+                isStaminaDown = false;
+                staminaCoolTime = 4.0f;
+            }
+        }
+
+        if(isMoving)
+        {
+            if (!footSound.isPlaying)
+            {
+                footSound.Play();
+            }
+        }
+        else
+        {
+            footSound.Stop();
+        }
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
 
@@ -99,17 +168,22 @@ public class PlayerMove : MonoBehaviour
 
         if(hit.gameObject.tag == "DangerZone")
         {
-            if(isMoving)
+            footSound.Stop();
+
+            if (isMoving)
             {
                 sound_Slider.value += 0.005f;
+
+                if(!leafFootSound.isPlaying)
+                {
+                    leafFootSound.Play();
+                }
             }
             else
             {
                 sound_Slider.value -= 0.001f;
-
+                leafFootSound.Stop();
             }
-            //사운드 재생
-            Debug.Log("바스락바스락");
         }
     }
 }
