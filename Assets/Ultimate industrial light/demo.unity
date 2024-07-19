@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -207,13 +206,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96075495}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.6987889, z: -0, w: 0.715328}
   m_LocalPosition: {x: 13.75, y: 2.35, z: -11.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -88.66, z: 0}
 --- !u!1 &1018436559
 GameObject:
@@ -301,13 +300,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018436559}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1027409110
 GameObject:
@@ -369,7 +368,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -406,13 +405,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027409110}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.13310719, y: 0.13, z: -0.4880297}
   m_LocalScale: {x: 31.352, y: 0.29116, z: 51.768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &240946877573589784
 PrefabInstance:
@@ -2244,3 +2243,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b81c344d7aa24449876083b6469468, type: 3}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 96075498}
+  - {fileID: 1195291645890703494}
+  - {fileID: 1026781878513676121}
+  - {fileID: 4247618355600613595}
+  - {fileID: 9013835671845837443}
+  - {fileID: 1144133443831028469}
+  - {fileID: 2489848039447797017}
+  - {fileID: 6397865491408605268}
+  - {fileID: 2403069268797140475}
+  - {fileID: 3699128814330631589}
+  - {fileID: 4227722912589958586}
+  - {fileID: 8414212900492079299}
+  - {fileID: 4989187585403590251}
+  - {fileID: 6621730157019044278}
+  - {fileID: 9028957446073524518}
+  - {fileID: 398799136582307051}
+  - {fileID: 3959729652572758317}
+  - {fileID: 1610665210265865520}
+  - {fileID: 5144096988588794911}
+  - {fileID: 3132339788479095126}
+  - {fileID: 5633530280995267548}
+  - {fileID: 4217123147657866814}
+  - {fileID: 8082579336880871252}
+  - {fileID: 1294412454447124506}
+  - {fileID: 240946877573589784}
+  - {fileID: 2233423952284549116}
+  - {fileID: 4962902306691067957}
+  - {fileID: 3926200936300703630}
+  - {fileID: 4772962766429711021}
+  - {fileID: 1204196201788133695}
+  - {fileID: 2862305141822817101}
+  - {fileID: 1018436561}
+  - {fileID: 1027409114}
