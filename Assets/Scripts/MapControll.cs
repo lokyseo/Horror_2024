@@ -6,6 +6,7 @@ public class MapControll : MonoBehaviour
 {
     GameObject player_Object;
 
+    public GameObject totalMapPrefab;
     public GameObject[] map_Prefab;
 
     GameObject currentMap;
@@ -14,9 +15,16 @@ public class MapControll : MonoBehaviour
 
     public bool isSceneClear;
     int currentNumber;
-
+    private void Awake()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            map_Prefab[i] = totalMapPrefab.transform.GetChild(i).gameObject;
+        }
+    }
     void Start()
     {
+   
         currentNumber = 0;
         isSceneClear = true;
         player_Object = GameObject.FindWithTag("Player");
