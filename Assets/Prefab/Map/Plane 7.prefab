@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e77b360d11cce4a9e3d53554d0958a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 19184434449238042}
+  maplight: {fileID: 0}
   blinkTime: 0
   randTime: 0
   onTime: 0
