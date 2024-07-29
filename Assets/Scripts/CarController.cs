@@ -28,9 +28,9 @@ public class CarController : MonoBehaviour
 
             player_Object.transform.position = transform.position + new Vector3(5,0,0);
             player_Object.transform.SetParent(null);
-            player_Object.transform.GetComponent<CharacterController>().enabled = true;
+           // player_Object.transform.GetComponent<CharacterController>().enabled = true;
             player_Object.transform.GetComponent<PlayerMove>().enabled = true;
-            transform.GetComponent<MapControll>().enabled = false;
+            //transform.GetComponent<MapControll>().enabled = false;
             transform.GetComponent<CarController>().enabled = false;
         }
         float moveHorizontal = Input.GetAxis("Horizontal"); 

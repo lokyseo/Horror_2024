@@ -95,7 +95,7 @@ public class PlayerMove : MonoBehaviour
         {
             if(!isStaminaDown && isMoving)
             {
-                moveSpeed = 15.0f;
+                moveSpeed = 30.0f;
                 stamina_Slider.value -= 0.1f;
                 footSound.pitch = 1.5f;
 
@@ -114,7 +114,7 @@ public class PlayerMove : MonoBehaviour
                 moveSpeed = 10.0f;
                 footSound.pitch = 1.0f;
             }
-            stamina_Slider.value += 0.02f;
+            stamina_Slider.value += 0.04f;
         }
 
         if(isStaminaDown)
@@ -124,7 +124,7 @@ public class PlayerMove : MonoBehaviour
             if(staminaCoolTime <=0)
             {
                 isStaminaDown = false;
-                staminaCoolTime = 4.0f;
+                staminaCoolTime = 3.0f;
             }
         }
 
@@ -153,9 +153,9 @@ public class PlayerMove : MonoBehaviour
                 Camera.main.transform.rotation = Quaternion.Euler(0, 0, 0);
 
                 transform.SetParent(hit.transform);
-                transform.GetComponent<CharacterController>().enabled = false;
+                //transform.GetComponent<CharacterController>().enabled = false;
                 transform.GetComponent<PlayerMove>().enabled = false;
-                hit.transform.GetComponent<MapControll>().enabled = true;
+                //hit.transform.GetComponent<MapControll>().enabled = true;
                 hit.transform.GetComponent<CarController>().enabled = true;
 
             }
