@@ -14,17 +14,14 @@ public class MapControll : MonoBehaviour
     GameObject backMap;
 
     public bool isSceneClear;
-    int currentNumber;
+    public int currentNumber;
     private void Awake()
     {
         for (int i = 0; i < 9; i++)
         {
             map_Prefab[i] = totalMapPrefab.transform.GetChild(i).gameObject;
         }
-    }
-    void Start()
-    {
-   
+
         currentNumber = 0;
         isSceneClear = true;
         player_Object = GameObject.FindWithTag("Player");
@@ -37,6 +34,11 @@ public class MapControll : MonoBehaviour
         frontMap.SetActive(true);
 
         RenderSettings.ambientLight = Color.black;
+    }
+    void Start()
+    {
+   
+        
     }
 
     void Update()
@@ -100,6 +102,7 @@ public class MapControll : MonoBehaviour
 
             LoadingMap();
             EventGenerate(currentNumber);
+            Debug.Log("Front" + currentNumber);
         }
 
         if (other.tag == "Map" && other.transform.parent.gameObject == backMap)
@@ -111,6 +114,7 @@ public class MapControll : MonoBehaviour
 
             LoadingMap();
             EventGenerate(currentNumber);
+            Debug.Log("Back" + currentNumber);
         }
     }
 }

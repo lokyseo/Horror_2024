@@ -13,6 +13,8 @@ public class onViewEvent : MonoBehaviour
     bool isExit;
     GameObject player_Object;
     public AudioSource footSound;
+    [SerializeField]
+    float moveSpeed;
     void Start()
     {
         isEnter = false;
@@ -47,16 +49,15 @@ public class onViewEvent : MonoBehaviour
             }
             else
             {
-                transform.position = Vector3.Lerp(transform.position,
-                    new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), 0.7f * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position,
+                    new Vector3(player_Object.transform.position.x, transform.position.y, player_Object.transform.position.z), moveSpeed * Time.deltaTime);
                 transform.LookAt(player_Object.transform.position);
-                if(Vector3.Distance(player_Object.transform.position, transform.position) < 20.0f)
+
+                if (!footSound.isPlaying)
                 {
-                    if(!footSound.isPlaying)
-                    {
-                        footSound.Play();
-                    }
+                    footSound.Play();
                 }
+
             }
         }
     }
