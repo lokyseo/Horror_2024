@@ -33,6 +33,7 @@ public class CarController : MonoBehaviour
             //transform.GetComponent<MapControll>().enabled = false;
             transform.GetComponent<CarController>().enabled = false;
         }
+
         float moveHorizontal = Input.GetAxis("Horizontal"); 
         float moveVertical = Input.GetAxis("Vertical"); 
 

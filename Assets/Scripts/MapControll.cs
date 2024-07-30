@@ -21,6 +21,7 @@ public class MapControll : MonoBehaviour
         {
             map_Prefab[i] = totalMapPrefab.transform.GetChild(i).gameObject;
         }
+
         currentNumber = 0;
         isSceneClear = true;
         player_Object = GameObject.FindWithTag("Player");
