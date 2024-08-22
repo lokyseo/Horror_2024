@@ -1,31 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
-public class MainSceneControl : MonoBehaviour,IPointerEnterHandler
+public class MainSceneControl : MonoBehaviour
 {
+    public PlayableDirector playableDirector;
+    void Awake()
+    {
+        playableDirector.Play();
+    }
+
     void Start()
     {
 
     }
 
-    public void GamePlayBtn()
+    // Update is called once per frame
+    void Update()
     {
-        Debug.Log("Check");
+       
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void GamePlayBtnClick()
     {
-        Debug.Log(eventData.pointerCurrentRaycast.gameObject.name);
+        Debug.Log("Test");
     }
 
-    public void OnMouseExit()
+    public void GameExitClick()
     {
-        Debug.Log(this.gameObject.name);
+        Debug.Log("exit");
     }
 }
