@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    public Transform target;
+    Transform target;
     float speed = 10;
     Vector3[] path;
     int targetIndex;
@@ -20,7 +20,6 @@ public class Unit : MonoBehaviour
         if (isTest)
         {
             PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
-            isTest = false;
 
         }
 
