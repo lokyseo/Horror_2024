@@ -1,84 +1,188 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class Unit : MonoBehaviour
 {
-    Transform target;
-    float speed = 10;
-    Vector3[] path;
-    int targetIndex;
 
-    public bool isTest;
+    const float minPathUpdateTime = .2f;
+    const float pathUpdateMoveThreshold = .5f;
+
+
+    public GameObject totalWayPoint;
+    public int currentWaypoint;
+    Transform target;
+    public float speed = 20;
+    public float turnSpeed = 3;
+    public float turnDst = 5;
+    public float stoppingDst = 10;
+
+    public bool isChasing;
+
+    Path path;
+
+
+    public float rayDistance;  
+    public LayerMask layerMask; 
+    public Transform rayOrigin; 
+
+    
+    private void Awake()
+    {
+        rayDistance = 20.0f;
+        isChasing = false;
+        currentWaypoint = 0;
+        target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
+    }
     void Start()
     {
-        PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
-        isTest = false;
+        StartCoroutine(UpdatePath());
     }
-    private void Update()
-    {
-        if (isTest)
-        {
-            PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
 
+    void Update()
+    {
+        Vector3 rayDirection = transform.forward;
+        Debug.DrawRay(rayOrigin.position, rayDirection * rayDistance, Color.red);
+        RaycastHit hit;
+
+        if (!isChasing)
+        {
+
+            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, layerMask))
+            {
+                target.position = hit.transform.position;
+                isChasing = true;
+
+            }
+
+            if (Vector3.Distance(transform.position, target.position) < 5.0f)
+            {
+                if (currentWaypoint < 3)
+                {
+                    currentWaypoint++;
+                }
+                else
+                {
+                    currentWaypoint = 0;
+                }
+                target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
+            }
         }
-
-    }
-    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
-    {
-        if(pathSuccessful)
+        else
         {
-            path = newPath;
+
+            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, layerMask))
+            {
+                target.position = hit.transform.position;
+            }
+
+            if (Vector3.Distance(transform.position, target.position) < 3.0f)
+            {
+                target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
+                isChasing = false;
+
+            }
+        }
+        
+
+       
+  
+    }
+
+    void OnRaycastHit(RaycastHit hitInfo)
+    {
+        Debug.Log("Raycast hit: " + hitInfo.collider.name);
+        // 추가 로직을 여기에 구현 (예: 충돌한 오브젝트에 특정 동작 수행 등)
+    }
+
+
+    public void OnPathFound(Vector3[] waypoints, bool pathSuccessful)
+    {
+        if (pathSuccessful)
+        {
+            path = new Path(waypoints, transform.position, turnDst, stoppingDst);
+
             StopCoroutine("FollowPath");
             StartCoroutine("FollowPath");
+        }
+    }
+   
+    IEnumerator UpdatePath()
+    {
 
-            
+        if (Time.timeSinceLevelLoad < .3f)
+        {
+            yield return new WaitForSeconds(.3f);
+        }
+        PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+
+        float sqrMoveThreshold = pathUpdateMoveThreshold * pathUpdateMoveThreshold;
+        Vector3 targetPosOld = target.position;
+
+        while (true)
+        {
+            yield return new WaitForSeconds(minPathUpdateTime);
+            //print(((target.position - targetPosOld).sqrMagnitude) + "    " + sqrMoveThreshold);
+            if ((target.position - targetPosOld).sqrMagnitude > sqrMoveThreshold)
+            {
+                PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+                targetPosOld = target.position;
+            }
         }
     }
 
     IEnumerator FollowPath()
     {
-        Vector3 currentWaypoint = path[0];
 
-        while(true)
+        bool followingPath = true;
+        int pathIndex = 0;
+        transform.LookAt(path.lookPoints[0]);
+
+        float speedPercent = 1;
+
+        while (followingPath)
         {
-            if(transform.position == currentWaypoint)
+            Vector2 pos2D = new Vector2(transform.position.x, transform.position.z);
+            while (path.turnBoundaries[pathIndex].HasCrossedLine(pos2D))
             {
-                targetIndex++;
-                if(targetIndex >= path.Length)
+                if (pathIndex == path.finishLineIndex)
                 {
-                    yield break;
+                    followingPath = false;
+                    break;
                 }
-                currentWaypoint = path[targetIndex];
+                else
+                {
+                    pathIndex++;
+                }
             }
-            Vector3 direction = currentWaypoint - this.transform.position;
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, speed * Time.deltaTime);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 3.0f * Time.deltaTime);
+
+            if (followingPath)
+            {
+
+                if (pathIndex >= path.slowDownIndex && stoppingDst > 0)
+                {
+                    speedPercent = Mathf.Clamp01(path.turnBoundaries[path.finishLineIndex].DistanceFromPoint(pos2D) / stoppingDst);
+                    if (speedPercent < 0.01f)
+                    {
+                        followingPath = false;
+                    }
+                }
+
+                Quaternion targetRotation = Quaternion.LookRotation(path.lookPoints[pathIndex] - transform.position);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * turnSpeed);
+                transform.Translate(Vector3.forward * Time.deltaTime * speed * speedPercent, Space.Self);
+            }
+
             yield return null;
+
         }
     }
 
     public void OnDrawGizmos()
     {
-        if(path != null)
+        if (path != null)
         {
-            for(int i = targetIndex; i < path.Length; i++)
-            {
-                Gizmos.color = Color.black;
-                Gizmos.DrawCube(path[i], Vector3.one);
-
-                if(i == targetIndex)
-                {
-                    Gizmos.DrawLine(transform.position, path[i]);
-
-                }
-                else
-                {
-                    Gizmos.DrawLine(path[i - 1], path[i]);
-                }
-            }
+            path.DrawWithGizmos();
         }
     }
-
 }

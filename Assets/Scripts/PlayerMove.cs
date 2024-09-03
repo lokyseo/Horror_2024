@@ -47,9 +47,6 @@ public class PlayerMove : MonoBehaviour
         Moved();
         
         GravityAndFlashLight();
-        
-
-
     }
 
     void GravityAndFlashLight()

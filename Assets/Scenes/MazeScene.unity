@@ -631,7 +631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 20028402}
   - component: {fileID: 20028403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,7 +671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 21900695}
   - component: {fileID: 21900696}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   - component: {fileID: 22710468}
   - component: {fileID: 22710470}
   - component: {fileID: 22710469}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +812,7 @@ Transform:
   m_GameObject: {fileID: 29096335}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 20.4, y: 9.703493, z: -4.89}
+  m_LocalPosition: {x: 20.4, y: 9.703493, z: -2.79}
   m_LocalScale: {x: 2.87, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -837,8 +837,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.471952, y: 0.17621534, z: 2.8658829}
-  m_Center: {x: 0.007058383, y: 0.000000007450585, z: -0.20058219}
+  m_Size: {x: 3.7689495, y: 0.27039903, z: 2.8658829}
+  m_Center: {x: 0.15555757, y: -0.047091838, z: -0.20058219}
 --- !u!23 &29096338
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ GameObject:
   - component: {fileID: 29630153}
   - component: {fileID: 29630155}
   - component: {fileID: 29630154}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1065,7 +1065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 42131409}
   - component: {fileID: 42131410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1189,7 @@ GameObject:
   - component: {fileID: 48002357}
   - component: {fileID: 48002359}
   - component: {fileID: 48002358}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,12 +1347,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a194907975765c4b939bed3394752c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayGridGizoms: 1
+  displayGridGizmos: 1
   unwalkableMask:
     serializedVersion: 2
     m_Bits: 256
-  gridWorldSize: {x: 63.7, y: 150.7}
-  nodeRadius: 0.3
+  gridWorldSize: {x: 57.8, y: 143.1}
+  nodeRadius: 0.4
+  walkableRegions:
+  - terrainMask:
+      serializedVersion: 2
+      m_Bits: 512
+    terrainPenalty: 0
+  - terrainMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    terrainPenalty: 5
+  obstacleProximityPenalty: 10
 --- !u!4 &48724323
 Transform:
   m_ObjectHideFlags: 0
@@ -1487,7 +1497,7 @@ GameObject:
   - component: {fileID: 58956118}
   - component: {fileID: 58956117}
   - component: {fileID: 58956116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1680,7 +1690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 67832530}
   - component: {fileID: 67832531}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1720,7 +1730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72153865}
   - component: {fileID: 72153866}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2281,7 +2291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119279186}
   - component: {fileID: 119279187}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2427,7 +2437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 128186807}
   - component: {fileID: 128186808}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2633,7 +2643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 137686963}
   - component: {fileID: 137686964}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2756,7 +2766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 139566357}
   - component: {fileID: 139566358}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2963,7 +2973,7 @@ GameObject:
   - component: {fileID: 145234802}
   - component: {fileID: 145234804}
   - component: {fileID: 145234803}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3047,7 +3057,7 @@ GameObject:
   - component: {fileID: 159862107}
   - component: {fileID: 159862106}
   - component: {fileID: 159862105}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3190,7 +3200,7 @@ GameObject:
   - component: {fileID: 165984573}
   - component: {fileID: 165984572}
   - component: {fileID: 165984571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3467,7 +3477,7 @@ GameObject:
   - component: {fileID: 170149773}
   - component: {fileID: 170149775}
   - component: {fileID: 170149774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3657,7 +3667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174041789}
   - component: {fileID: 174041790}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3697,7 +3707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 176031094}
   - component: {fileID: 176031095}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3906,7 +3916,7 @@ GameObject:
   - component: {fileID: 184943221}
   - component: {fileID: 184943220}
   - component: {fileID: 184943219}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4207,7 +4217,7 @@ GameObject:
   - component: {fileID: 192988657}
   - component: {fileID: 192988656}
   - component: {fileID: 192988655}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4508,7 +4518,7 @@ GameObject:
   - component: {fileID: 203048307}
   - component: {fileID: 203048306}
   - component: {fileID: 203048305}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4640,7 +4650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210035876}
   - component: {fileID: 210035877}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4680,7 +4690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210503604}
   - component: {fileID: 210503605}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4785,7 +4795,7 @@ GameObject:
   - component: {fileID: 212718328}
   - component: {fileID: 212718327}
   - component: {fileID: 212718326}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4919,7 +4929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214632363}
   - component: {fileID: 214632364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4949,6 +4959,124 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214632362}
   m_Mesh: {fileID: -7280123919740365836, guid: edc5618afa1cc9c42a16323a5c98244e, type: 3}
+--- !u!1 &216549825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 216549826}
+  - component: {fileID: 216549828}
+  - component: {fileID: 216549827}
+  m_Layer: 7
+  m_Name: Light (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &216549826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216549825}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.6666665, y: 6.6666665, z: 6.6666665}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1323820796}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &216549827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216549825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &216549828
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216549825}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0.98703563, g: 1, b: 0.7877358, a: 1}
+  m_Intensity: 1200
+  m_Range: 300
+  m_SpotAngle: 26.897171
+  m_InnerSpotAngle: 13.054907
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.1
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 5
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 18.3
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &218605173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,7 +5276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 228366930}
   - component: {fileID: 228366931}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5252,7 +5380,7 @@ GameObject:
   - component: {fileID: 233785447}
   - component: {fileID: 233785446}
   - component: {fileID: 233785445}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rocks_Small_00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5346,6 +5474,95 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233785443}
   m_Mesh: {fileID: -4873437336441384081, guid: 78f1001f4eaea2146bd330e2a7640eac, type: 3}
+--- !u!1 &234233811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234233812}
+  - component: {fileID: 234233813}
+  m_Layer: 5
+  m_Name: Mic_Slider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &234233812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234233811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 401124193}
+  - {fileID: 909083706}
+  m_Father: {fileID: 1388493129}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50, y: 20}
+  m_SizeDelta: {x: 400, y: 100}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &234233813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234233811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 413249586}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 0.5
+  m_WholeNumbers: 0
+  m_Value: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &236691664
 GameObject:
   m_ObjectHideFlags: 0
@@ -5767,7 +5984,7 @@ GameObject:
   - component: {fileID: 251536781}
   - component: {fileID: 251536780}
   - component: {fileID: 251536779}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6337,7 +6554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 262244552}
   - component: {fileID: 262244553}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6377,7 +6594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 268452625}
   - component: {fileID: 268452626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6417,7 +6634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 268678309}
   - component: {fileID: 268678310}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6520,7 +6737,7 @@ GameObject:
   - component: {fileID: 271584538}
   - component: {fileID: 271584540}
   - component: {fileID: 271584539}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6603,7 +6820,7 @@ GameObject:
   - component: {fileID: 272286525}
   - component: {fileID: 272286527}
   - component: {fileID: 272286526}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6685,7 +6902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284079771}
   - component: {fileID: 284079772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6808,7 +7025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290212356}
   - component: {fileID: 290212357}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6886,7 +7103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 300270553}
   - component: {fileID: 300270554}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6926,7 +7143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301536275}
   - component: {fileID: 301536276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7135,7 +7352,7 @@ GameObject:
   - component: {fileID: 322662771}
   - component: {fileID: 322662770}
   - component: {fileID: 322662769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rocks_Small_00 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7488,7 +7705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 339002683}
   - component: {fileID: 339002684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7559,7 +7776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 342692829}
   - component: {fileID: 342692830}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7819,7 +8036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 361559006}
   - component: {fileID: 361559007}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8193,7 +8410,7 @@ GameObject:
   - component: {fileID: 381696958}
   - component: {fileID: 381696957}
   - component: {fileID: 381696956}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8306,7 +8523,7 @@ GameObject:
   - component: {fileID: 382747659}
   - component: {fileID: 382747658}
   - component: {fileID: 382747657}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8502,7 +8719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 384399422}
   - component: {fileID: 384399423}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8545,7 +8762,7 @@ GameObject:
   - component: {fileID: 399167792}
   - component: {fileID: 399167791}
   - component: {fileID: 399167790}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8667,6 +8884,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399167788}
   m_Mesh: {fileID: 4300000, guid: 232842b7647a26b488dacde76364e942, type: 3}
+--- !u!1 &401124192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401124193}
+  - component: {fileID: 401124195}
+  - component: {fileID: 401124194}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &401124193
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401124192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234233812}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &401124194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401124192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &401124195
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401124192}
+  m_CullTransparentMesh: 1
 --- !u!1 &401827526
 GameObject:
   m_ObjectHideFlags: 0
@@ -8676,7 +8968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401827527}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8712,7 +9004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 403148679}
   - component: {fileID: 403148680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8991,6 +9283,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410226179}
   m_Mesh: {fileID: -4015702184506621846, guid: 4b9888e8896131d4a98e7df5a84ae5e0, type: 3}
+--- !u!1 &413249585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413249586}
+  - component: {fileID: 413249588}
+  - component: {fileID: 413249587}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &413249586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413249585}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 909083706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &413249587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413249585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &413249588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413249585}
+  m_CullTransparentMesh: 1
 --- !u!1 &414056915
 GameObject:
   m_ObjectHideFlags: 0
@@ -9167,7 +9534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 419247339}
   - component: {fileID: 419247340}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9207,7 +9574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420642446}
   - component: {fileID: 420642447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9857,7 +10224,7 @@ GameObject:
   - component: {fileID: 446701032}
   - component: {fileID: 446701034}
   - component: {fileID: 446701033}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10418,7 +10785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461910366}
   - component: {fileID: 461910367}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10542,7 +10909,7 @@ GameObject:
   - component: {fileID: 466057362}
   - component: {fileID: 466057364}
   - component: {fileID: 466057363}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10790,7 +11157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472555872}
   - component: {fileID: 472555873}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10831,7 +11198,7 @@ GameObject:
   - component: {fileID: 475860483}
   - component: {fileID: 475860485}
   - component: {fileID: 475860484}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10916,7 +11283,7 @@ GameObject:
   - component: {fileID: 477287282}
   - component: {fileID: 477287284}
   - component: {fileID: 477287283}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10999,7 +11366,7 @@ GameObject:
   - component: {fileID: 477319852}
   - component: {fileID: 477319854}
   - component: {fileID: 477319853}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11085,7 +11452,7 @@ GameObject:
   - component: {fileID: 478545649}
   - component: {fileID: 478545648}
   - component: {fileID: 478545647}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rocks_Small_00 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11477,7 +11844,7 @@ GameObject:
   - component: {fileID: 489599609}
   - component: {fileID: 489599611}
   - component: {fileID: 489599610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11643,7 +12010,7 @@ GameObject:
   - component: {fileID: 503731450}
   - component: {fileID: 503731452}
   - component: {fileID: 503731451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12057,7 +12424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519732182}
   - component: {fileID: 519732183}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12192,7 +12559,7 @@ GameObject:
   - component: {fileID: 528815465}
   - component: {fileID: 528815467}
   - component: {fileID: 528815466}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12362,7 +12729,7 @@ GameObject:
   - component: {fileID: 531666447}
   - component: {fileID: 531666446}
   - component: {fileID: 531666445}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12663,7 +13030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 537289377}
   - component: {fileID: 537289378}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12934,7 +13301,7 @@ GameObject:
   - component: {fileID: 544902884}
   - component: {fileID: 544902883}
   - component: {fileID: 544902882}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13066,7 +13433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 545250329}
   - component: {fileID: 545250330}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13189,7 +13556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 551617820}
   - component: {fileID: 551617821}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13219,6 +13586,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551617819}
   m_Mesh: {fileID: -5823062500150932571, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
+--- !u!1 &553449636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553449637}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &553449637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553449636}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.589, y: 0, z: -0.916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913857301}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &558143045
 GameObject:
   m_ObjectHideFlags: 0
@@ -13230,7 +13628,7 @@ GameObject:
   - component: {fileID: 558143046}
   - component: {fileID: 558143048}
   - component: {fileID: 558143047}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13314,7 +13712,7 @@ GameObject:
   - component: {fileID: 564830411}
   - component: {fileID: 564830410}
   - component: {fileID: 564830409}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13654,7 +14052,7 @@ GameObject:
   - component: {fileID: 569545698}
   - component: {fileID: 569545697}
   - component: {fileID: 569545696}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rocks_Small_00 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13841,7 +14239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574191890}
   - component: {fileID: 574191891}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13913,7 +14311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580199344}
   - component: {fileID: 580199345}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13953,7 +14351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 584140305}
   - component: {fileID: 584140306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13996,7 +14394,7 @@ GameObject:
   - component: {fileID: 584405008}
   - component: {fileID: 584405007}
   - component: {fileID: 584405006}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14166,7 +14564,7 @@ GameObject:
   - component: {fileID: 590889271}
   - component: {fileID: 590889273}
   - component: {fileID: 590889272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14248,7 +14646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 593169931}
   - component: {fileID: 593169932}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14289,7 +14687,7 @@ GameObject:
   - component: {fileID: 593987911}
   - component: {fileID: 593987913}
   - component: {fileID: 593987912}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14499,6 +14897,144 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 3, z: 0.2}
   m_Center: {x: 0, y: 1.47, z: 0}
+--- !u!1 &600603846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600603847}
+  - component: {fileID: 600603850}
+  - component: {fileID: 600603849}
+  - component: {fileID: 600603848}
+  m_Layer: 7
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &600603847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600603846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.74, z: 0.672}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 988696544}
+  m_Father: {fileID: 1130207946}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &600603848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600603846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 600603847}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!81 &600603849
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600603846}
+  m_Enabled: 1
+--- !u!20 &600603850
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600603846}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.09
+  far clip plane: 150
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &602236365
 GameObject:
   m_ObjectHideFlags: 0
@@ -14562,7 +15098,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 65af39cccd98cd34a923cf4d8a89a2e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14601,7 +15137,7 @@ Transform:
   m_GameObject: {fileID: 602236365}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.97871125, z: -0, w: 0.20524241}
-  m_LocalPosition: {x: 16.62, y: 0, z: 63.62}
+  m_LocalPosition: {x: -9.4, y: 0, z: 23.4}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -14621,7 +15157,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0030fb8e1222c54587698efe6150045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTest: 0
+  totalWayPoint: {fileID: 1913857300}
+  currentWaypoint: 0
+  speed: 10
+  turnSpeed: 5
+  turnDst: 0
+  stoppingDst: 5
+  isChasing: 0
+  rayDistance: 10
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  rayOrigin: {fileID: 1733853766}
 --- !u!1 &602285734
 GameObject:
   m_ObjectHideFlags: 0
@@ -14632,7 +15179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 602285735}
   - component: {fileID: 602285736}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14745,6 +15292,95 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605193788}
   m_Mesh: {fileID: 1636278447586535312, guid: 49dceee4794a77f4bbe15c15e96f67ed, type: 3}
+--- !u!1 &605540988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605540989}
+  - component: {fileID: 605540990}
+  m_Layer: 5
+  m_Name: StaminaSlider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &605540989
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605540988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1666729924}
+  - {fileID: 1817726732}
+  m_Father: {fileID: 1388493129}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 30}
+  m_SizeDelta: {x: 800, y: 30}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &605540990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605540988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 1663824932}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 0
+  m_Value: 100
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &607778211
 GameObject:
   m_ObjectHideFlags: 0
@@ -14982,7 +15618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615817925}
   - component: {fileID: 615817926}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15293,7 +15929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632199317}
   - component: {fileID: 632199318}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15334,7 +15970,7 @@ GameObject:
   - component: {fileID: 637326454}
   - component: {fileID: 637326456}
   - component: {fileID: 637326455}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15797,7 +16433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659752420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Maze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15830,7 +16466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660686869}
   - component: {fileID: 660686870}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15860,143 +16496,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660686868}
   m_Mesh: {fileID: -1900218983047024605, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
---- !u!1 &663526941
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 663526944}
-  - component: {fileID: 663526943}
-  - component: {fileID: 663526942}
-  - component: {fileID: 663526945}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &663526942
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663526941}
-  m_Enabled: 1
---- !u!20 &663526943
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663526941}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &663526944
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663526941}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.97871125, z: -0, w: 0.20524241}
-  m_LocalPosition: {x: 16.62, y: 3, z: 63.62}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &663526945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663526941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &664413564
 GameObject:
   m_ObjectHideFlags: 0
@@ -16008,7 +16507,7 @@ GameObject:
   - component: {fileID: 664413565}
   - component: {fileID: 664413567}
   - component: {fileID: 664413566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16506,7 +17005,7 @@ GameObject:
   - component: {fileID: 699128314}
   - component: {fileID: 699128316}
   - component: {fileID: 699128315}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16588,7 +17087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702389992}
   - component: {fileID: 702389993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16899,7 +17398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710992856}
   - component: {fileID: 710992857}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17007,7 +17506,7 @@ GameObject:
   - component: {fileID: 717246282}
   - component: {fileID: 717246281}
   - component: {fileID: 717246280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17120,7 +17619,7 @@ GameObject:
   - component: {fileID: 725444083}
   - component: {fileID: 725444082}
   - component: {fileID: 725444081}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17256,7 +17755,7 @@ GameObject:
   - component: {fileID: 728902696}
   - component: {fileID: 728902695}
   - component: {fileID: 728902694}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17360,7 +17859,7 @@ GameObject:
   - component: {fileID: 731163167}
   - component: {fileID: 731163169}
   - component: {fileID: 731163168}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17653,7 +18152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 739134637}
   - component: {fileID: 739134638}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17711,7 +18210,7 @@ Transform:
   m_GameObject: {fileID: 742564425}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 5.66, y: 9.703493, z: 29.710001}
+  m_LocalPosition: {x: 5.75, y: 9.703493, z: 29.710001}
   m_LocalScale: {x: 9, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17736,7 +18235,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.471952, y: 0.17621534, z: 2.8658829}
+  m_Size: {x: 3.46, y: 0.17621534, z: 2.8658829}
   m_Center: {x: 0.007058383, y: 0.000000007450585, z: -0.20058219}
 --- !u!23 &742564428
 MeshRenderer:
@@ -17884,7 +18383,7 @@ GameObject:
   - component: {fileID: 748446330}
   - component: {fileID: 748446329}
   - component: {fileID: 748446328}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18020,7 +18519,7 @@ GameObject:
   - component: {fileID: 754455826}
   - component: {fileID: 754455825}
   - component: {fileID: 754455824}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rocks_Small_00 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18125,7 +18624,7 @@ GameObject:
   - component: {fileID: 754550560}
   - component: {fileID: 754550562}
   - component: {fileID: 754550561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18207,7 +18706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756339427}
   - component: {fileID: 756339428}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18247,7 +18746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759081926}
   - component: {fileID: 759081927}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18456,7 +18955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 766324788}
   - component: {fileID: 766324789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18657,7 +19156,7 @@ GameObject:
   - component: {fileID: 769472302}
   - component: {fileID: 769472304}
   - component: {fileID: 769472303}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18742,7 +19241,7 @@ GameObject:
   - component: {fileID: 769531310}
   - component: {fileID: 769531312}
   - component: {fileID: 769531311}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18906,7 +19405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 772751583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19011,7 +19510,7 @@ GameObject:
   - component: {fileID: 776254941}
   - component: {fileID: 776254940}
   - component: {fileID: 776254939}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19229,7 +19728,7 @@ GameObject:
   - component: {fileID: 783014535}
   - component: {fileID: 783014534}
   - component: {fileID: 783014533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19364,7 +19863,7 @@ GameObject:
   - component: {fileID: 785653077}
   - component: {fileID: 785653079}
   - component: {fileID: 785653078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19447,7 +19946,7 @@ GameObject:
   - component: {fileID: 792041140}
   - component: {fileID: 792041142}
   - component: {fileID: 792041141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19532,7 +20031,7 @@ GameObject:
   - component: {fileID: 798794130}
   - component: {fileID: 798794129}
   - component: {fileID: 798794128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19665,7 +20164,7 @@ GameObject:
   - component: {fileID: 800422296}
   - component: {fileID: 800422298}
   - component: {fileID: 800422297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19748,7 +20247,7 @@ GameObject:
   - component: {fileID: 800533570}
   - component: {fileID: 800533572}
   - component: {fileID: 800533571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19924,7 +20423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 803700836}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20189,7 +20688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 810156451}
   - component: {fileID: 810156452}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20228,7 +20727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 811062429}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20381,7 +20880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 816290207}
   - component: {fileID: 816290208}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20649,7 +21148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827586732}
   - component: {fileID: 827586733}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20858,7 +21357,7 @@ GameObject:
   - component: {fileID: 846086177}
   - component: {fileID: 846086176}
   - component: {fileID: 846086175}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21328,7 +21827,7 @@ GameObject:
   - component: {fileID: 855992168}
   - component: {fileID: 855992170}
   - component: {fileID: 855992169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21411,7 +21910,7 @@ GameObject:
   - component: {fileID: 856054275}
   - component: {fileID: 856054277}
   - component: {fileID: 856054276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21869,7 +22368,7 @@ GameObject:
   - component: {fileID: 873919372}
   - component: {fileID: 873919371}
   - component: {fileID: 873919370}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22002,7 +22501,7 @@ GameObject:
   - component: {fileID: 881311538}
   - component: {fileID: 881311540}
   - component: {fileID: 881311539}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22085,7 +22584,7 @@ GameObject:
   - component: {fileID: 882250223}
   - component: {fileID: 882250225}
   - component: {fileID: 882250224}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22157,6 +22656,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882250222}
   m_Mesh: {fileID: 2534964839176971238, guid: 28c9934d2d972d84dbf5e592a2a17630, type: 3}
+--- !u!1 &883043802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883043803}
+  - component: {fileID: 883043806}
+  - component: {fileID: 883043805}
+  - component: {fileID: 883043804}
+  m_Layer: 7
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &883043803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883043802}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.783, z: 0.59}
+  m_LocalScale: {x: 0.44000003, y: 0.44000003, z: 0.44000003}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1130207946}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &883043804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883043802}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &883043805
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883043802}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &883043806
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883043802}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &884085406
 GameObject:
   m_ObjectHideFlags: 0
@@ -22168,7 +22772,7 @@ GameObject:
   - component: {fileID: 884085407}
   - component: {fileID: 884085409}
   - component: {fileID: 884085408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22250,7 +22854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886538168}
   - component: {fileID: 886538169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22290,7 +22894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887619918}
   - component: {fileID: 887619919}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22330,7 +22934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 891702144}
   - component: {fileID: 891702145}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22370,7 +22974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892088109}
   - component: {fileID: 892088110}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22623,7 +23227,7 @@ GameObject:
   - component: {fileID: 901468370}
   - component: {fileID: 901468372}
   - component: {fileID: 901468371}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22810,6 +23414,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909035621}
   m_Mesh: {fileID: -4265963671259817642, guid: c1a6d3ffbc04d3f43aeb43ef91b53842, type: 3}
+--- !u!1 &909083705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909083706}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &909083706
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909083705}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 413249586}
+  m_Father: {fileID: 234233812}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &909259027
 GameObject:
   m_ObjectHideFlags: 0
@@ -22820,7 +23460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909259028}
   - component: {fileID: 909259029}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22863,7 +23503,7 @@ GameObject:
   - component: {fileID: 923634284}
   - component: {fileID: 923634283}
   - component: {fileID: 923634282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22994,7 +23634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 924137258}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23033,7 +23673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 928009757}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23073,7 +23713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 929359432}
   - component: {fileID: 929359433}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23446,7 +24086,7 @@ GameObject:
   - component: {fileID: 940225523}
   - component: {fileID: 940225525}
   - component: {fileID: 940225524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23529,7 +24169,7 @@ GameObject:
   - component: {fileID: 942741227}
   - component: {fileID: 942741229}
   - component: {fileID: 942741228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23613,7 +24253,7 @@ GameObject:
   - component: {fileID: 943238203}
   - component: {fileID: 943238202}
   - component: {fileID: 943238201}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23723,7 +24363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 943274809}
   - component: {fileID: 943274810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23763,7 +24403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 944752072}
   - component: {fileID: 944752073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23959,113 +24599,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951225366}
   m_Mesh: {fileID: -4015702184506621846, guid: 4b9888e8896131d4a98e7df5a84ae5e0, type: 3}
---- !u!1 &961579975
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 961579979}
-  - component: {fileID: 961579978}
-  - component: {fileID: 961579977}
-  - component: {fileID: 961579976}
-  m_Layer: 0
-  m_Name: Target
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &961579976
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961579975}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &961579977
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961579975}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &961579978
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961579975}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &961579979
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961579975}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.741, y: 0, z: -53.116}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962683741
 GameObject:
   m_ObjectHideFlags: 0
@@ -24078,7 +24611,7 @@ GameObject:
   - component: {fileID: 962683745}
   - component: {fileID: 962683744}
   - component: {fileID: 962683743}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rocks_Small_00 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24182,7 +24715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963073677}
   - component: {fileID: 963073678}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24222,7 +24755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 965667420}
   - component: {fileID: 965667421}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24348,7 +24881,7 @@ GameObject:
   - component: {fileID: 976878214}
   - component: {fileID: 976878213}
   - component: {fileID: 976878212}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24732,7 +25265,7 @@ GameObject:
   - component: {fileID: 986375553}
   - component: {fileID: 986375555}
   - component: {fileID: 986375554}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24887,6 +25420,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988562191}
   m_Mesh: {fileID: 1636278447586535312, guid: 49dceee4794a77f4bbe15c15e96f67ed, type: 3}
+--- !u!1001 &988696543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 600603847}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.359
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.684
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.099
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9998567
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.016929103
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      propertyPath: m_Name
+      value: FlashLightver
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1323820796}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+--- !u!4 &988696544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: de4f4177dabcb7e449c818e7dbe19da2, type: 3}
+  m_PrefabInstance: {fileID: 988696543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &992921754
 GameObject:
   m_ObjectHideFlags: 0
@@ -25139,7 +25737,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.5, y: 3, z: 0.2}
+  m_Size: {x: 3.4, y: 3, z: 0.18}
   m_Center: {x: 0, y: 1.47, z: 0}
 --- !u!1 &994847404
 GameObject:
@@ -25153,7 +25751,7 @@ GameObject:
   - component: {fileID: 994847408}
   - component: {fileID: 994847407}
   - component: {fileID: 994847406}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25515,7 +26113,7 @@ GameObject:
   - component: {fileID: 1012739072}
   - component: {fileID: 1012739071}
   - component: {fileID: 1012739070}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25733,7 +26331,7 @@ GameObject:
   - component: {fileID: 1015307114}
   - component: {fileID: 1015307116}
   - component: {fileID: 1015307115}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25815,7 +26413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1015365519}
   - component: {fileID: 1015365520}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25941,7 +26539,7 @@ GameObject:
   - component: {fileID: 1019079508}
   - component: {fileID: 1019079507}
   - component: {fileID: 1019079506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26075,7 +26673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1027677935}
   - component: {fileID: 1027677936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26199,7 +26797,7 @@ GameObject:
   - component: {fileID: 1031316441}
   - component: {fileID: 1031316443}
   - component: {fileID: 1031316442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26533,7 +27131,7 @@ GameObject:
   - component: {fileID: 1039782228}
   - component: {fileID: 1039782227}
   - component: {fileID: 1039782226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26750,7 +27348,7 @@ GameObject:
   - component: {fileID: 1041508069}
   - component: {fileID: 1041508068}
   - component: {fileID: 1041508067}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26863,7 +27461,7 @@ GameObject:
   - component: {fileID: 1042583984}
   - component: {fileID: 1042583983}
   - component: {fileID: 1042583982}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26997,7 +27595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1046391462}
   - component: {fileID: 1046391463}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27123,7 +27721,7 @@ GameObject:
   - component: {fileID: 1048915183}
   - component: {fileID: 1048915182}
   - component: {fileID: 1048915181}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27601,6 +28199,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056134203}
   m_Mesh: {fileID: -5495902117074765545, guid: 7f71d8f22feb9574f99b94e15646ea4c, type: 3}
+--- !u!1 &1058464513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1058464514}
+  - component: {fileID: 1058464515}
+  m_Layer: 0
+  m_Name: LeafSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1058464514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058464513}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1490394089}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1058464515
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058464513}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cbe166fd7d115914c88ad13b1a366691, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 3
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1063244535
 GameObject:
   m_ObjectHideFlags: 0
@@ -27697,7 +28423,7 @@ GameObject:
   - component: {fileID: 1066784236}
   - component: {fileID: 1066784235}
   - component: {fileID: 1066784234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28197,7 +28923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076129609}
   - component: {fileID: 1076129610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28237,7 +28963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1077528656}
   - component: {fileID: 1077528657}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28782,7 +29508,7 @@ Transform:
   m_GameObject: {fileID: 1099131438}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.24, y: 0, z: 0.417}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28798,7 +29524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1101748501}
   - component: {fileID: 1101748502}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29093,7 +29819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120441017}
   - component: {fileID: 1120441018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29133,7 +29859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120529115}
   - component: {fileID: 1120529116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29173,7 +29899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124436140}
   - component: {fileID: 1124436141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29319,7 +30045,7 @@ GameObject:
   - component: {fileID: 1127100853}
   - component: {fileID: 1127100855}
   - component: {fileID: 1127100854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29463,7 +30189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1129982141}
   - component: {fileID: 1129982142}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29493,6 +30219,137 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129982140}
   m_Mesh: {fileID: 3009805953881563059, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
+--- !u!1 &1130207940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130207946}
+  - component: {fileID: 1130207945}
+  - component: {fileID: 1130207944}
+  - component: {fileID: 1130207943}
+  - component: {fileID: 1130207941}
+  m_Layer: 7
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!143 &1130207941
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130207940}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1130207943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130207940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73259963b970ad04db54c52acbdb6a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 2
+  sound_Slider: {fileID: 234233813}
+  flashLight: {fileID: 1323820795}
+  stamina_Slider: {fileID: 605540990}
+  footSound: {fileID: 1744640011}
+  leafFootSound: {fileID: 1058464515}
+--- !u!23 &1130207944
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130207940}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1130207945
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130207940}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1130207946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130207940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.723, y: 0, z: -66.3}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 883043803}
+  - {fileID: 600603847}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142904548
 GameObject:
   m_ObjectHideFlags: 0
@@ -29586,7 +30443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1143203440}
   - component: {fileID: 1143203441}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29688,7 +30545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1144952906}
   - component: {fileID: 1144952907}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29730,7 +30587,7 @@ GameObject:
   - component: {fileID: 1145132852}
   - component: {fileID: 1145132851}
   - component: {fileID: 1145132850}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30089,7 +30946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151100260}
   - component: {fileID: 1151100261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30298,7 +31155,7 @@ GameObject:
   - component: {fileID: 1157119762}
   - component: {fileID: 1157119761}
   - component: {fileID: 1157119760}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30626,7 +31483,7 @@ GameObject:
   - component: {fileID: 1166725898}
   - component: {fileID: 1166725897}
   - component: {fileID: 1166725896}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30906,7 +31763,7 @@ GameObject:
   - component: {fileID: 1177896596}
   - component: {fileID: 1177896598}
   - component: {fileID: 1177896597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31460,7 +32317,7 @@ GameObject:
   - component: {fileID: 1197632318}
   - component: {fileID: 1197632320}
   - component: {fileID: 1197632319}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31543,7 +32400,7 @@ GameObject:
   - component: {fileID: 1202894228}
   - component: {fileID: 1202894230}
   - component: {fileID: 1202894229}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31627,7 +32484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207039665}
   - component: {fileID: 1207039666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31668,7 +32525,7 @@ GameObject:
   - component: {fileID: 1208008301}
   - component: {fileID: 1208008303}
   - component: {fileID: 1208008302}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31750,7 +32607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210281466}
   - component: {fileID: 1210281467}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31873,7 +32730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1220355289}
   - component: {fileID: 1220355290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32206,7 +33063,7 @@ GameObject:
   - component: {fileID: 1235444714}
   - component: {fileID: 1235444716}
   - component: {fileID: 1235444715}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32353,7 +33210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240846353}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32622,7 +33479,7 @@ GameObject:
   - component: {fileID: 1243527547}
   - component: {fileID: 1243527549}
   - component: {fileID: 1243527548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32707,7 +33564,7 @@ GameObject:
   - component: {fileID: 1247288612}
   - component: {fileID: 1247288611}
   - component: {fileID: 1247288610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32844,7 +33701,7 @@ GameObject:
   - component: {fileID: 1248400961}
   - component: {fileID: 1248400960}
   - component: {fileID: 1248400959}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32978,7 +33835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249442096}
   - component: {fileID: 1249442097}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33017,7 +33874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251678169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33219,7 +34076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269113120}
   - component: {fileID: 1269113121}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33946,7 +34803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284109266}
   - component: {fileID: 1284109267}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34152,7 +35009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288027683}
   - component: {fileID: 1288027684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34275,7 +35132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288911554}
   - component: {fileID: 1288911555}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34702,7 +35559,7 @@ GameObject:
   - component: {fileID: 1315136775}
   - component: {fileID: 1315136777}
   - component: {fileID: 1315136776}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34940,6 +35797,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321958222}
   m_Mesh: {fileID: -1889257637145357740, guid: dcd20ee0f05b85e47a82700c45ea3c65, type: 3}
+--- !u!1 &1323820795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323820796}
+  m_Layer: 0
+  m_Name: FlashLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1323820796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323820795}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0.461}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2110371482}
+  - {fileID: 216549826}
+  m_Father: {fileID: 988696544}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324909802
 GameObject:
   m_ObjectHideFlags: 0
@@ -34950,7 +35840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1324909803}
   - component: {fileID: 1324909804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35074,7 +35964,7 @@ GameObject:
   - component: {fileID: 1328629887}
   - component: {fileID: 1328629889}
   - component: {fileID: 1328629888}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35304,7 +36194,7 @@ GameObject:
   - component: {fileID: 1335530115}
   - component: {fileID: 1335530117}
   - component: {fileID: 1335530116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35450,7 +36340,7 @@ GameObject:
   - component: {fileID: 1343231623}
   - component: {fileID: 1343231622}
   - component: {fileID: 1343231621}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35560,7 +36450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1346887208}
   - component: {fileID: 1346887209}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35603,7 +36493,7 @@ GameObject:
   - component: {fileID: 1349497546}
   - component: {fileID: 1349497545}
   - component: {fileID: 1349497544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35736,7 +36626,7 @@ GameObject:
   - component: {fileID: 1350298753}
   - component: {fileID: 1350298755}
   - component: {fileID: 1350298754}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36009,7 +36899,7 @@ GameObject:
   - component: {fileID: 1355243367}
   - component: {fileID: 1355243369}
   - component: {fileID: 1355243368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36174,7 +37064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358528438}
   - component: {fileID: 1358528439}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36214,7 +37104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358581741}
   - component: {fileID: 1358581742}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36317,7 +37207,7 @@ GameObject:
   - component: {fileID: 1371194898}
   - component: {fileID: 1371194900}
   - component: {fileID: 1371194899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36482,7 +37372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1378529973}
   - component: {fileID: 1378529974}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36634,6 +37524,109 @@ Transform:
   - {fileID: 1160031687}
   m_Father: {fileID: 735634552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1388493125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388493129}
+  - component: {fileID: 1388493128}
+  - component: {fileID: 1388493127}
+  - component: {fileID: 1388493126}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1388493126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388493125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1388493127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388493125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1388493128
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388493125}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1388493129
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388493125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 234233812}
+  - {fileID: 605540989}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1390641321
 GameObject:
   m_ObjectHideFlags: 0
@@ -36645,7 +37638,7 @@ GameObject:
   - component: {fileID: 1390641322}
   - component: {fileID: 1390641324}
   - component: {fileID: 1390641323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36914,7 +37907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1407348691}
   - component: {fileID: 1407348692}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37159,7 +38152,7 @@ GameObject:
   - component: {fileID: 1416670771}
   - component: {fileID: 1416670773}
   - component: {fileID: 1416670772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37275,7 +38268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418260072}
   - component: {fileID: 1418260073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37316,7 +38309,7 @@ GameObject:
   - component: {fileID: 1419182904}
   - component: {fileID: 1419182906}
   - component: {fileID: 1419182905}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37494,7 +38487,7 @@ GameObject:
   - component: {fileID: 1422246897}
   - component: {fileID: 1422246899}
   - component: {fileID: 1422246898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37594,8 +38587,8 @@ Transform:
   m_GameObject: {fileID: 1423905228}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 9.55, y: 9.703493, z: -24.756474}
-  m_LocalScale: {x: 9, y: 6, z: 6}
+  m_LocalPosition: {x: 9.55, y: 9.703493, z: -25.77}
+  m_LocalScale: {x: 8, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1778067134}
@@ -37619,8 +38612,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.471952, y: 0.17621534, z: 2.8658829}
-  m_Center: {x: 0.007058383, y: 0.000000007450585, z: -0.20058219}
+  m_Size: {x: 3.5822117, y: 0.17621534, z: 2.8658829}
+  m_Center: {x: -0.04807112, y: 0.000000009934108, z: -0.20058219}
 --- !u!23 &1423905231
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37930,7 +38923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435791548}
   - component: {fileID: 1435791549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37972,7 +38965,7 @@ GameObject:
   - component: {fileID: 1436588943}
   - component: {fileID: 1436588942}
   - component: {fileID: 1436588941}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38082,7 +39075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439972176}
   - component: {fileID: 1439972177}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38208,7 +39201,7 @@ GameObject:
   - component: {fileID: 1444698707}
   - component: {fileID: 1444698706}
   - component: {fileID: 1444698705}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38342,7 +39335,7 @@ GameObject:
   - component: {fileID: 1447081841}
   - component: {fileID: 1447081840}
   - component: {fileID: 1447081839}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38784,7 +39777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1460162372}
   - component: {fileID: 1460162373}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38907,7 +39900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1462375259}
   - component: {fileID: 1462375260}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39003,7 +39996,7 @@ GameObject:
   - component: {fileID: 1473701070}
   - component: {fileID: 1473701072}
   - component: {fileID: 1473701071}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39168,7 +40161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476695610}
   - component: {fileID: 1476695611}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39209,7 +40202,7 @@ GameObject:
   - component: {fileID: 1479098935}
   - component: {fileID: 1479098937}
   - component: {fileID: 1479098936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39522,7 +40515,7 @@ GameObject:
   - component: {fileID: 1486826946}
   - component: {fileID: 1486826948}
   - component: {fileID: 1486826947}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39604,7 +40597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1488266360}
   - component: {fileID: 1488266361}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39634,6 +40627,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488266359}
   m_Mesh: {fileID: -5823062500150932571, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
+--- !u!1 &1490394088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1490394089}
+  m_Layer: 0
+  m_Name: AudioResource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1490394089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490394088}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.7160614, y: 2.5684726, z: -17.903465}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1744640010}
+  - {fileID: 1058464514}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1490868205
 GameObject:
   m_ObjectHideFlags: 0
@@ -39727,7 +40753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495123222}
   - component: {fileID: 1495123223}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39830,7 +40856,7 @@ GameObject:
   - component: {fileID: 1497545663}
   - component: {fileID: 1497545665}
   - component: {fileID: 1497545664}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39911,7 +40937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1497863113}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40035,7 +41061,7 @@ GameObject:
   - component: {fileID: 1502075229}
   - component: {fileID: 1502075231}
   - component: {fileID: 1502075230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40203,7 +41229,7 @@ GameObject:
   - component: {fileID: 1512300443}
   - component: {fileID: 1512300442}
   - component: {fileID: 1512300441}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40418,7 +41444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1528737385}
   - component: {fileID: 1528737386}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40461,7 +41487,7 @@ GameObject:
   - component: {fileID: 1529455459}
   - component: {fileID: 1529455458}
   - component: {fileID: 1529455457}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40866,7 +41892,7 @@ GameObject:
   - component: {fileID: 1533917570}
   - component: {fileID: 1533917572}
   - component: {fileID: 1533917571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40948,7 +41974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1534194555}
   - component: {fileID: 1534194556}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40990,7 +42016,7 @@ GameObject:
   - component: {fileID: 1538531034}
   - component: {fileID: 1538531033}
   - component: {fileID: 1538531032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41269,7 +42295,7 @@ GameObject:
   - component: {fileID: 1547371473}
   - component: {fileID: 1547371472}
   - component: {fileID: 1547371471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41403,7 +42429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1550281394}
   - component: {fileID: 1550281395}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41671,7 +42697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562080257}
   - component: {fileID: 1562080258}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41713,7 +42739,7 @@ GameObject:
   - component: {fileID: 1562523748}
   - component: {fileID: 1562523747}
   - component: {fileID: 1562523746}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41826,7 +42852,7 @@ GameObject:
   - component: {fileID: 1566153822}
   - component: {fileID: 1566153821}
   - component: {fileID: 1566153820}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41963,7 +42989,7 @@ GameObject:
   - component: {fileID: 1567050528}
   - component: {fileID: 1567050527}
   - component: {fileID: 1567050526}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42097,7 +43123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1573179242}
   - component: {fileID: 1573179243}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42219,7 +43245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575161489}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42260,7 +43286,7 @@ GameObject:
   - component: {fileID: 1582833307}
   - component: {fileID: 1582833309}
   - component: {fileID: 1582833308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42276,7 +43302,7 @@ Transform:
   m_GameObject: {fileID: 1582833306}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.010649353, y: 1.6354024, z: -0.000000019302206}
+  m_LocalPosition: {x: -0.02, y: 1.6354024, z: -0.000000019302206}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42343,7 +43369,7 @@ GameObject:
   - component: {fileID: 1585848569}
   - component: {fileID: 1585848571}
   - component: {fileID: 1585848570}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42591,7 +43617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1594988521}
   - component: {fileID: 1594988522}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42632,7 +43658,7 @@ GameObject:
   - component: {fileID: 1595989108}
   - component: {fileID: 1595989110}
   - component: {fileID: 1595989109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42714,7 +43740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1596823671}
   - component: {fileID: 1596823672}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43039,7 +44065,7 @@ GameObject:
   - component: {fileID: 1613654225}
   - component: {fileID: 1613654227}
   - component: {fileID: 1613654226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43509,7 +44535,7 @@ GameObject:
   - component: {fileID: 1629522887}
   - component: {fileID: 1629522889}
   - component: {fileID: 1629522888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43674,7 +44700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632568441}
   - component: {fileID: 1632568442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43717,7 +44743,7 @@ GameObject:
   - component: {fileID: 1632857273}
   - component: {fileID: 1632857272}
   - component: {fileID: 1632857271}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43933,7 +44959,7 @@ GameObject:
   - component: {fileID: 1634980175}
   - component: {fileID: 1634980177}
   - component: {fileID: 1634980176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44207,7 +45233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640230237}
   - component: {fileID: 1640230238}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44247,7 +45273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647342665}
   - component: {fileID: 1647342666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44287,7 +45313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647511444}
   - component: {fileID: 1647511445}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44327,7 +45353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652225116}
   - component: {fileID: 1652225117}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44712,6 +45738,156 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654126967}
   m_Mesh: {fileID: 1636278447586535312, guid: 49dceee4794a77f4bbe15c15e96f67ed, type: 3}
+--- !u!1 &1663824931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1663824932}
+  - component: {fileID: 1663824934}
+  - component: {fileID: 1663824933}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1663824932
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663824931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1817726732}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1663824933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663824931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.9476305, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1663824934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663824931}
+  m_CullTransparentMesh: 1
+--- !u!1 &1666729923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666729924}
+  - component: {fileID: 1666729926}
+  - component: {fileID: 1666729925}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1666729924
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666729923}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605540989}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1666729925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666729923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1666729926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666729923}
+  m_CullTransparentMesh: 1
 --- !u!1 &1667510218
 GameObject:
   m_ObjectHideFlags: 0
@@ -44805,7 +45981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1675558594}
   - component: {fileID: 1675558595}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45058,7 +46234,7 @@ GameObject:
   - component: {fileID: 1690746502}
   - component: {fileID: 1690746504}
   - component: {fileID: 1690746503}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45132,6 +46308,74 @@ CapsuleCollider:
   m_Height: 3.06
   m_Direction: 1
   m_Center: {x: 0, y: 0.48, z: 0}
+--- !u!1 &1696416329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696416332}
+  - component: {fileID: 1696416331}
+  - component: {fileID: 1696416330}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1696416330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696416329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1696416331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696416329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1696416332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696416329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1700008632
 GameObject:
   m_ObjectHideFlags: 0
@@ -45143,7 +46387,7 @@ GameObject:
   - component: {fileID: 1700008633}
   - component: {fileID: 1700008635}
   - component: {fileID: 1700008634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45225,7 +46469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704816001}
   - component: {fileID: 1704816002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45265,7 +46509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1707227365}
   - component: {fileID: 1707227366}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45308,7 +46552,7 @@ GameObject:
   - component: {fileID: 1710147495}
   - component: {fileID: 1710147494}
   - component: {fileID: 1710147493}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45714,7 +46958,7 @@ GameObject:
   - component: {fileID: 1714871846}
   - component: {fileID: 1714871848}
   - component: {fileID: 1714871847}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45796,7 +47040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715467621}
   - component: {fileID: 1715467622}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45885,7 +47129,7 @@ GameObject:
   - component: {fileID: 1721760226}
   - component: {fileID: 1721760228}
   - component: {fileID: 1721760227}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45968,7 +47212,7 @@ GameObject:
   - component: {fileID: 1722630989}
   - component: {fileID: 1722630991}
   - component: {fileID: 1722630990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46051,7 +47295,7 @@ GameObject:
   - component: {fileID: 1725311921}
   - component: {fileID: 1725311923}
   - component: {fileID: 1725311922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46135,7 +47379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1725384492}
   - component: {fileID: 1725384493}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46176,7 +47420,7 @@ GameObject:
   - component: {fileID: 1726635088}
   - component: {fileID: 1726635090}
   - component: {fileID: 1726635089}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46260,7 +47504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726830020}
   - component: {fileID: 1726830021}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46407,7 +47651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1727439885}
   - component: {fileID: 1727439886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46530,7 +47774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1728361446}
   - component: {fileID: 1728361447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46571,7 +47815,7 @@ GameObject:
   - component: {fileID: 1731116063}
   - component: {fileID: 1731116065}
   - component: {fileID: 1731116064}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46655,7 +47899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1733553110}
   - component: {fileID: 1733553111}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46803,7 +48047,7 @@ GameObject:
   - component: {fileID: 1734257141}
   - component: {fileID: 1734257140}
   - component: {fileID: 1734257139}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47022,7 +48266,7 @@ GameObject:
   - component: {fileID: 1744280675}
   - component: {fileID: 1744280674}
   - component: {fileID: 1744280673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47122,6 +48366,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744280671}
   m_Mesh: {fileID: -5570736390010699934, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
+--- !u!1 &1744640009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744640010}
+  - component: {fileID: 1744640011}
+  m_Layer: 0
+  m_Name: footSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1744640010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744640009}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1490394089}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1744640011
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744640009}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 93428eb3b4039774b83e6df83c77273e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.527
+  m_Pitch: 3
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1745939065
 GameObject:
   m_ObjectHideFlags: 0
@@ -47297,7 +48669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1748786328}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47418,7 +48790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753093446}
   - component: {fileID: 1753093447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47458,7 +48830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755403138}
   - component: {fileID: 1755403139}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47498,7 +48870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755614952}
   - component: {fileID: 1755614953}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47913,7 +49285,7 @@ GameObject:
   - component: {fileID: 1777186118}
   - component: {fileID: 1777186117}
   - component: {fileID: 1777186116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48022,7 +49394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778067134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48094,7 +49466,7 @@ GameObject:
   - component: {fileID: 1779082871}
   - component: {fileID: 1779082870}
   - component: {fileID: 1779082869}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48540,7 +49912,7 @@ GameObject:
   - component: {fileID: 1792595136}
   - component: {fileID: 1792595138}
   - component: {fileID: 1792595137}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48689,7 +50061,7 @@ GameObject:
   - component: {fileID: 1797864653}
   - component: {fileID: 1797864655}
   - component: {fileID: 1797864654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48773,7 +50145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1798540568}
   - component: {fileID: 1798540569}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48876,7 +50248,7 @@ GameObject:
   - component: {fileID: 1801751614}
   - component: {fileID: 1801751616}
   - component: {fileID: 1801751615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48958,7 +50330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1804196928}
   - component: {fileID: 1804196929}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49081,7 +50453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808282857}
   - component: {fileID: 1808282858}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49204,7 +50576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811708354}
   - component: {fileID: 1811708355}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49247,7 +50619,7 @@ GameObject:
   - component: {fileID: 1813318396}
   - component: {fileID: 1813318395}
   - component: {fileID: 1813318394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49467,7 +50839,7 @@ GameObject:
   - component: {fileID: 1815634079}
   - component: {fileID: 1815634078}
   - component: {fileID: 1815634077}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49672,6 +51044,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817601019}
   m_Mesh: {fileID: 5384433450674553581, guid: f0577f7f7439fba44bb05942913c7d73, type: 3}
+--- !u!1 &1817726731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817726732}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1817726732
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817726731}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1663824932}
+  m_Father: {fileID: 605540989}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1818095005
 GameObject:
   m_ObjectHideFlags: 0
@@ -49848,7 +51256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819328571}
   - component: {fileID: 1819328572}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49971,7 +51379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1826575993}
   - component: {fileID: 1826575994}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50094,7 +51502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1827336862}
   - component: {fileID: 1827336863}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50218,7 +51626,7 @@ GameObject:
   - component: {fileID: 1830735451}
   - component: {fileID: 1830735453}
   - component: {fileID: 1830735452}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50406,7 +51814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1831682575}
   - component: {fileID: 1831682576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50717,7 +52125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840010772}
   - component: {fileID: 1840010773}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51053,7 +52461,7 @@ GameObject:
   - component: {fileID: 1860172499}
   - component: {fileID: 1860172498}
   - component: {fileID: 1860172497}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51437,7 +52845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871931179}
   - component: {fileID: 1871931180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51477,7 +52885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1874045458}
   - component: {fileID: 1874045459}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51694,7 +53102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1882595503}
   - component: {fileID: 1882595504}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51817,7 +53225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889956703}
   - component: {fileID: 1889956704}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51859,7 +53267,7 @@ GameObject:
   - component: {fileID: 1896293797}
   - component: {fileID: 1896293796}
   - component: {fileID: 1896293795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51969,7 +53377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901395178}
   - component: {fileID: 1901395179}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042102"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52095,7 +53503,7 @@ GameObject:
   - component: {fileID: 1906331754}
   - component: {fileID: 1906331753}
   - component: {fileID: 1906331752}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52227,7 +53635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908172271}
   - component: {fileID: 1908172272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52388,7 +53796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911756242}
   - component: {fileID: 1911756243}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52510,6 +53918,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1099131439}
+  - {fileID: 1921088489}
+  - {fileID: 553449637}
+  - {fileID: 2030459324}
   m_Father: {fileID: 483825887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1916060203
@@ -52522,7 +53933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1916060204}
   - component: {fileID: 1916060205}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52562,7 +53973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918375390}
   - component: {fileID: 1918375391}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52780,6 +54191,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920630633}
   m_Mesh: {fileID: -6360558719573625917, guid: 75a751192b9632343924484e82f28f3f, type: 3}
+--- !u!1 &1921088488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921088489}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921088489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921088488}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.708, y: 0, z: 4.476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913857301}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1922609932
 GameObject:
   m_ObjectHideFlags: 0
@@ -52973,7 +54415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926451555}
   - component: {fileID: 1926451556}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53067,7 +54509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1936878376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tunnel_obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53083,7 +54525,7 @@ Transform:
   m_GameObject: {fileID: 1936878375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.120694496, y: 0.11997186, z: 0.06319362}
+  m_LocalPosition: {x: -0.497, y: 0.445, z: 0.532}
   m_LocalScale: {x: 0.015625, y: 0.015625, z: 0.006944445}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53122,7 +54564,7 @@ GameObject:
   - component: {fileID: 1940099830}
   - component: {fileID: 1940099829}
   - component: {fileID: 1940099828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickaxe_LOD1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53255,7 +54697,7 @@ GameObject:
   - component: {fileID: 1944273145}
   - component: {fileID: 1944273147}
   - component: {fileID: 1944273146}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53817,7 +55259,7 @@ GameObject:
   - component: {fileID: 1972027262}
   - component: {fileID: 1972027264}
   - component: {fileID: 1972027263}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54005,7 +55447,7 @@ GameObject:
   - component: {fileID: 1977814677}
   - component: {fileID: 1977814679}
   - component: {fileID: 1977814678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54087,7 +55529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1982166837}
   - component: {fileID: 1982166838}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54212,7 +55654,7 @@ GameObject:
   - component: {fileID: 1989735191}
   - component: {fileID: 1989735190}
   - component: {fileID: 1989735189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54655,7 +56097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2013475606}
   - component: {fileID: 2013475607}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54915,7 +56357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2029663513}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54945,6 +56387,37 @@ Transform:
   - {fileID: 1512300440}
   m_Father: {fileID: 1936878376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2030459323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2030459324}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2030459324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030459323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.624, y: 0, z: -3.794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913857301}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034168325
 GameObject:
   m_ObjectHideFlags: 0
@@ -54955,7 +56428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2034168326}
   - component: {fileID: 2034168327}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55028,7 +56501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2039100930}
   - component: {fileID: 2039100931}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55067,7 +56540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2039553005}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55186,7 +56659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2042852066}
   - component: {fileID: 2042852067}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55226,7 +56699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045087837}
   - component: {fileID: 2045087838}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55267,7 +56740,7 @@ GameObject:
   - component: {fileID: 2045724229}
   - component: {fileID: 2045724231}
   - component: {fileID: 2045724230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55640,7 +57113,7 @@ GameObject:
   - component: {fileID: 2055077376}
   - component: {fileID: 2055077378}
   - component: {fileID: 2055077377}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55778,7 +57251,7 @@ GameObject:
   - component: {fileID: 2058944549}
   - component: {fileID: 2058944551}
   - component: {fileID: 2058944550}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56040,7 +57513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2069309697}
   - component: {fileID: 2069309698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042103"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56248,7 +57721,7 @@ GameObject:
   - component: {fileID: 2078705024}
   - component: {fileID: 2078705023}
   - component: {fileID: 2078705022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56359,7 +57832,7 @@ GameObject:
   - component: {fileID: 2080754063}
   - component: {fileID: 2080754065}
   - component: {fileID: 2080754064}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56442,7 +57915,7 @@ GameObject:
   - component: {fileID: 2084327509}
   - component: {fileID: 2084327511}
   - component: {fileID: 2084327510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56773,7 +58246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091918627}
   - component: {fileID: 2091918628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56932,7 +58405,7 @@ GameObject:
   - component: {fileID: 2100083615}
   - component: {fileID: 2100083617}
   - component: {fileID: 2100083616}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57016,7 +58489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101089529}
   - component: {fileID: 2101089530}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57056,7 +58529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2102172625}
   - component: {fileID: 2102172626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57262,7 +58735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2106107330}
   - component: {fileID: 2106107331}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57302,7 +58775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109837558}
   - component: {fileID: 2109837559}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57332,6 +58805,124 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109837557}
   m_Mesh: {fileID: -5630075786770141575, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
+--- !u!1 &2110371481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2110371482}
+  - component: {fileID: 2110371484}
+  - component: {fileID: 2110371483}
+  m_Layer: 7
+  m_Name: Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2110371482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110371481}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.6666665, y: 6.6666665, z: 6.6666665}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1323820796}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2110371483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110371481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &2110371484
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110371481}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0.98703563, g: 1, b: 0.7877358, a: 1}
+  m_Intensity: 200
+  m_Range: 300
+  m_SpotAngle: 88.73325
+  m_InnerSpotAngle: 48.63218
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.1
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 5
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 18.3
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &2114911106
 GameObject:
   m_ObjectHideFlags: 0
@@ -57488,7 +59079,7 @@ GameObject:
   - component: {fileID: 2117450345}
   - component: {fileID: 2117450347}
   - component: {fileID: 2117450346}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57570,7 +59161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118208709}
   - component: {fileID: 2118208710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57778,7 +59369,7 @@ GameObject:
   - component: {fileID: 2118641064}
   - component: {fileID: 2118641063}
   - component: {fileID: 2118641062}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58054,7 +59645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2122602410}
   - component: {fileID: 2122602411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042104"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58094,7 +59685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2123692207}
   - component: {fileID: 2123692208}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042101"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58135,7 +59726,7 @@ GameObject:
   - component: {fileID: 2124199812}
   - component: {fileID: 2124199814}
   - component: {fileID: 2124199813}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58387,7 +59978,7 @@ GameObject:
   - component: {fileID: 2129361407}
   - component: {fileID: 2129361406}
   - component: {fileID: 2129361405}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shovel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58497,7 +60088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2134614493}
   - component: {fileID: 2134614494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Shovel_001_\u042105"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58538,7 +60129,7 @@ GameObject:
   - component: {fileID: 2136513984}
   - component: {fileID: 2136513986}
   - component: {fileID: 2136513985}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58621,7 +60212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139203423}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dummy (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58822,9 +60413,11 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 663526944}
   - {fileID: 48724323}
   - {fileID: 2096917965}
   - {fileID: 602236369}
-  - {fileID: 961579979}
   - {fileID: 483825887}
+  - {fileID: 1130207946}
+  - {fileID: 1388493129}
+  - {fileID: 1696416332}
+  - {fileID: 1490394089}
