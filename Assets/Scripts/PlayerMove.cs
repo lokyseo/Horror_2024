@@ -160,7 +160,7 @@ public class PlayerMove : MonoBehaviour
 
         if(hit.gameObject.tag == "Trap")
         {
-            //애니메이션 재생
+            
         }
 
         if(hit.gameObject.tag == "DangerZone")

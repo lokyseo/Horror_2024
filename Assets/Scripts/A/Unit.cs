@@ -12,12 +12,14 @@ public class Unit : MonoBehaviour
     public GameObject totalWayPoint;
     public int currentWaypoint;
     Transform target;
-    public float speed = 20;
+    public float speed;
     public float turnSpeed = 3;
     public float turnDst = 5;
     public float stoppingDst = 10;
 
     public bool isChasing;
+    float chaseCoolTime;
+    
 
     Path path;
 
@@ -29,6 +31,8 @@ public class Unit : MonoBehaviour
     
     private void Awake()
     {
+        chaseCoolTime = 3.0f;
+        speed = 10.0f;
         rayDistance = 20.0f;
         isChasing = false;
         currentWaypoint = 0;
@@ -47,12 +51,14 @@ public class Unit : MonoBehaviour
 
         if (!isChasing)
         {
+            speed = 10.0f;
+            transform.GetComponent<MeshRenderer>().material.color = Color.black;
 
             if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, layerMask))
             {
-                target.position = hit.transform.position;
+                target = hit.transform;
                 isChasing = true;
-
+                chaseCoolTime = 4.0f;
             }
 
             if (Vector3.Distance(transform.position, target.position) < 5.0f)
@@ -70,17 +76,31 @@ public class Unit : MonoBehaviour
         }
         else
         {
+            Debug.Log("추적중");
+            speed = 20.0f;
+            transform.GetComponent<MeshRenderer>().material.color = Color.red;
 
-            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, layerMask))
-            {
-                target.position = hit.transform.position;
-            }
+            chaseCoolTime -= Time.deltaTime;
 
-            if (Vector3.Distance(transform.position, target.position) < 3.0f)
+            if(chaseCoolTime < 0)
             {
                 target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
                 isChasing = false;
+                Debug.Log("추적 실패");
+            }
 
+
+            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, layerMask))
+            {
+                target = hit.transform;
+                chaseCoolTime = 4.0f;
+            }
+
+            if (Vector3.Distance(transform.position, target.position) < 6.0f)
+            {
+                target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
+                isChasing = false;
+                Debug.Log("잡았고~");
             }
         }
         
