@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.02
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -713,7 +712,7 @@ GameObject:
   - component: {fileID: 22710468}
   - component: {fileID: 22710470}
   - component: {fileID: 22710469}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,7 +1271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48656572}
   - component: {fileID: 48656573}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1351,7 +1350,7 @@ MonoBehaviour:
   displayGridGizmos: 0
   unwalkableMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2304
   gridWorldSize: {x: 57.8, y: 143.1}
   nodeRadius: 0.4
   walkableRegions:
@@ -2974,7 +2973,7 @@ GameObject:
   - component: {fileID: 145234802}
   - component: {fileID: 145234804}
   - component: {fileID: 145234803}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3698,46 +3697,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174041788}
   m_Mesh: {fileID: 3009805953881563059, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
---- !u!1 &176031093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 176031094}
-  - component: {fileID: 176031095}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042103"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &176031094
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176031093}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 717246279}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &176031095
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176031093}
-  m_Mesh: {fileID: -1900218983047024605, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &176245240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5387,7 +5346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &233785444
 Transform:
   m_ObjectHideFlags: 0
@@ -7359,7 +7318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &322662768
 Transform:
   m_ObjectHideFlags: 0
@@ -8975,7 +8934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &401827527
 Transform:
   m_ObjectHideFlags: 0
@@ -9525,46 +9484,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416246424}
   m_Mesh: {fileID: -4015702184506621846, guid: 4b9888e8896131d4a98e7df5a84ae5e0, type: 3}
---- !u!1 &419247338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 419247339}
-  - component: {fileID: 419247340}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042102"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &419247339
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419247338}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 717246279}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &419247340
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419247338}
-  m_Mesh: {fileID: 3009805953881563059, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &420642445
 GameObject:
   m_ObjectHideFlags: 0
@@ -11459,7 +11378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &478545646
 Transform:
   m_ObjectHideFlags: 0
@@ -12560,9 +12479,9 @@ GameObject:
   - component: {fileID: 528815465}
   - component: {fileID: 528815467}
   - component: {fileID: 528815466}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12576,7 +12495,7 @@ Transform:
   m_GameObject: {fileID: 528815464}
   serializedVersion: 2
   m_LocalRotation: {x: 0.32804084, y: -0.21352942, z: 0.62640965, w: 0.67409605}
-  m_LocalPosition: {x: 7.114105, y: -3.8900793, z: -19.00137}
+  m_LocalPosition: {x: 15.8, y: -3.8900793, z: -19.00137}
   m_LocalScale: {x: 2, y: 2.2999997, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12609,7 +12528,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!136 &528815467
 CapsuleCollider:
@@ -13021,46 +12940,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535575121}
   m_Mesh: {fileID: 1959945702643577517, guid: a1d1c946e73e62148ac408475ab0a49d, type: 3}
---- !u!1 &537289376
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 537289377}
-  - component: {fileID: 537289378}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042101"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &537289377
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537289376}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2118641061}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &537289378
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537289376}
-  m_Mesh: {fileID: -5630075786770141575, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &537466840
 GameObject:
   m_ObjectHideFlags: 0
@@ -13424,46 +13303,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544902880}
   m_Mesh: {fileID: 4300000, guid: 232842b7647a26b488dacde76364e942, type: 3}
---- !u!1 &545250328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 545250329}
-  - component: {fileID: 545250330}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042104"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &545250329
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545250328}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2118641061}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &545250330
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545250328}
-  m_Mesh: {fileID: -5823062500150932571, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &548538431
 GameObject:
   m_ObjectHideFlags: 0
@@ -13629,7 +13468,7 @@ GameObject:
   - component: {fileID: 558143046}
   - component: {fileID: 558143048}
   - component: {fileID: 558143047}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14059,7 +13898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &569545695
 Transform:
   m_ObjectHideFlags: 0
@@ -14534,7 +14373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &587751232
 Transform:
   m_ObjectHideFlags: 0
@@ -14688,7 +14527,7 @@ GameObject:
   - component: {fileID: 593987911}
   - component: {fileID: 593987913}
   - component: {fileID: 593987912}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14853,7 +14692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 596613042}
   - component: {fileID: 596613043}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14971,12 +14810,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &600603849
 AudioListener:
   m_ObjectHideFlags: 0
@@ -15165,11 +15004,17 @@ MonoBehaviour:
   turnDst: 0
   stoppingDst: 5
   isChasing: 0
-  rayDistance: 10
-  layerMask:
+  totalLayerMask:
+    serializedVersion: 2
+    m_Bits: 384
+  playerMask:
     serializedVersion: 2
     m_Bits: 128
+  blockMask:
+    serializedVersion: 2
+    m_Bits: 256
   rayOrigin: {fileID: 1733853766}
+  trap_Object: {fileID: 2029663512}
 --- !u!1 &602285734
 GameObject:
   m_ObjectHideFlags: 0
@@ -15564,7 +15409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 613547488}
   - component: {fileID: 613547489}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16508,7 +16353,7 @@ GameObject:
   - component: {fileID: 664413565}
   - component: {fileID: 664413567}
   - component: {fileID: 664413566}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17495,118 +17340,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1573605649}
   m_Enabled: 1
---- !u!1 &717246278
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 717246279}
-  - component: {fileID: 717246282}
-  - component: {fileID: 717246281}
-  - component: {fileID: 717246280}
-  m_Layer: 10
-  m_Name: Shovel_001 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &717246279
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717246278}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.4653163, y: 0.022971272, z: -0.5324289, w: -0.7067337}
-  m_LocalPosition: {x: 12.064119, y: -4.18035, z: -8.290085}
-  m_LocalScale: {x: 4, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1982166837}
-  - {fileID: 419247339}
-  - {fileID: 176031094}
-  - {fileID: 2122602410}
-  - {fileID: 1346887208}
-  m_Father: {fileID: 2029663513}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.655}
---- !u!136 &717246280
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717246278}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.02
-  m_Height: 1.6799927
-  m_Direction: 1
-  m_Center: {x: 0.055, y: 0.84, z: 0}
---- !u!23 &717246281
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717246278}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f089c83691f48394cabdf67f7e964e59, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &717246282
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717246278}
-  m_Mesh: {fileID: -5570736390010699934, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &725444079
 GameObject:
   m_ObjectHideFlags: 0
@@ -17860,7 +17593,7 @@ GameObject:
   - component: {fileID: 731163167}
   - component: {fileID: 731163169}
   - component: {fileID: 731163168}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18526,7 +18259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &754455823
 Transform:
   m_ObjectHideFlags: 0
@@ -18625,7 +18358,7 @@ GameObject:
   - component: {fileID: 754550560}
   - component: {fileID: 754550562}
   - component: {fileID: 754550561}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18697,46 +18430,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754550559}
   m_Mesh: {fileID: -6360558719573625917, guid: c8f806837124f384bb226e50304a458a, type: 3}
---- !u!1 &756339426
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 756339427}
-  - component: {fileID: 756339428}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042102"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &756339427
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756339426}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2118641061}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &756339428
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756339426}
-  m_Mesh: {fileID: 3009805953881563059, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &759081925
 GameObject:
   m_ObjectHideFlags: 0
@@ -19412,7 +19105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &772751583
 Transform:
   m_ObjectHideFlags: 0
@@ -19729,9 +19422,9 @@ GameObject:
   - component: {fileID: 783014535}
   - component: {fileID: 783014534}
   - component: {fileID: 783014533}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer_003
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19745,7 +19438,7 @@ Transform:
   m_GameObject: {fileID: 783014531}
   serializedVersion: 2
   m_LocalRotation: {x: 0.08721712, y: 0.55699295, z: 0.058968622, w: -0.82381725}
-  m_LocalPosition: {x: 20.446373, y: -3.8300796, z: -23.208912}
+  m_LocalPosition: {x: 14.29, y: -3.8300796, z: -23.208912}
   m_LocalScale: {x: 6, y: 7, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19778,7 +19471,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!136 &783014534
 CapsuleCollider:
@@ -19864,7 +19557,7 @@ GameObject:
   - component: {fileID: 785653077}
   - component: {fileID: 785653079}
   - component: {fileID: 785653078}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20165,7 +19858,7 @@ GameObject:
   - component: {fileID: 800422296}
   - component: {fileID: 800422298}
   - component: {fileID: 800422297}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20430,7 +20123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &803700836
 Transform:
   m_ObjectHideFlags: 0
@@ -20734,7 +20427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &811062429
 Transform:
   m_ObjectHideFlags: 0
@@ -20764,7 +20457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812788461}
   - component: {fileID: 812788462}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22502,7 +22195,7 @@ GameObject:
   - component: {fileID: 881311538}
   - component: {fileID: 881311540}
   - component: {fileID: 881311539}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23641,7 +23334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &924137258
 Transform:
   m_ObjectHideFlags: 0
@@ -23680,7 +23373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &928009757
 Transform:
   m_ObjectHideFlags: 0
@@ -24087,7 +23780,7 @@ GameObject:
   - component: {fileID: 940225523}
   - component: {fileID: 940225525}
   - component: {fileID: 940225524}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24618,7 +24311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &962683742
 Transform:
   m_ObjectHideFlags: 0
@@ -25695,7 +25388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 994299949}
   - component: {fileID: 994299950}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29439,7 +29132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098982482}
   - component: {fileID: 1098982483}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29850,46 +29543,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120441016}
   m_Mesh: {fileID: 3009805953881563059, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
---- !u!1 &1120529114
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1120529115}
-  - component: {fileID: 1120529116}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042105"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1120529115
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120529114}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2118641061}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1120529116
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120529114}
-  m_Mesh: {fileID: 1626103535371871834, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &1124436139
 GameObject:
   m_ObjectHideFlags: 0
@@ -30046,7 +29699,7 @@ GameObject:
   - component: {fileID: 1127100853}
   - component: {fileID: 1127100855}
   - component: {fileID: 1127100854}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30343,7 +29996,7 @@ Transform:
   m_GameObject: {fileID: 1130207940}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.723, y: 0, z: -66.3}
+  m_LocalPosition: {x: 14.7, y: 0, z: 25.4}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -31764,7 +31417,7 @@ GameObject:
   - component: {fileID: 1177896596}
   - component: {fileID: 1177896598}
   - component: {fileID: 1177896597}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31991,7 +31644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1181602424}
   - component: {fileID: 1181602425}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32318,7 +31971,7 @@ GameObject:
   - component: {fileID: 1197632318}
   - component: {fileID: 1197632320}
   - component: {fileID: 1197632319}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33217,7 +32870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1240846353
 Transform:
   m_ObjectHideFlags: 0
@@ -33881,7 +33534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1251678169
 Transform:
   m_ObjectHideFlags: 0
@@ -34292,7 +33945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1276534966
 Transform:
   m_ObjectHideFlags: 0
@@ -36195,7 +35848,7 @@ GameObject:
   - component: {fileID: 1335530115}
   - component: {fileID: 1335530117}
   - component: {fileID: 1335530116}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36441,46 +36094,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343231619}
   m_Mesh: {fileID: -5570736390010699934, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
---- !u!1 &1346887207
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1346887208}
-  - component: {fileID: 1346887209}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042105"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1346887208
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346887207}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 717246279}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1346887209
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346887207}
-  m_Mesh: {fileID: 1626103535371871834, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &1349497542
 GameObject:
   m_ObjectHideFlags: 0
@@ -36494,9 +36107,9 @@ GameObject:
   - component: {fileID: 1349497546}
   - component: {fileID: 1349497545}
   - component: {fileID: 1349497544}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Pickaxe_LOD1
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36510,7 +36123,7 @@ Transform:
   m_GameObject: {fileID: 1349497542}
   serializedVersion: 2
   m_LocalRotation: {x: -0.36728236, y: -0.55646276, z: 0.60423803, w: -0.43629035}
-  m_LocalPosition: {x: 22.513754, y: -3.840079, z: -14.038242}
+  m_LocalPosition: {x: 10.47, y: -3.840079, z: -14.038242}
   m_LocalScale: {x: 8, y: 9, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36541,7 +36154,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!136 &1349497545
 CapsuleCollider:
@@ -37208,7 +36821,7 @@ GameObject:
   - component: {fileID: 1371194898}
   - component: {fileID: 1371194900}
   - component: {fileID: 1371194899}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37639,7 +37252,7 @@ GameObject:
   - component: {fileID: 1390641322}
   - component: {fileID: 1390641324}
   - component: {fileID: 1390641323}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38097,7 +37710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1416068031}
   - component: {fileID: 1416068032}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38310,9 +37923,9 @@ GameObject:
   - component: {fileID: 1419182904}
   - component: {fileID: 1419182906}
   - component: {fileID: 1419182905}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38359,7 +37972,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!136 &1419182906
 CapsuleCollider:
@@ -39076,7 +38689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439972176}
   - component: {fileID: 1439972177}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39941,7 +39554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464155192}
   - component: {fileID: 1464155193}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40944,7 +40557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1497863113
 Transform:
   m_ObjectHideFlags: 0
@@ -41062,7 +40675,7 @@ GameObject:
   - component: {fileID: 1502075229}
   - component: {fileID: 1502075231}
   - component: {fileID: 1502075230}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41230,9 +40843,9 @@ GameObject:
   - component: {fileID: 1512300443}
   - component: {fileID: 1512300442}
   - component: {fileID: 1512300441}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Pickaxe_LOD1 (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41277,7 +40890,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!136 &1512300442
 CapsuleCollider:
@@ -41445,7 +41058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1528737385}
   - component: {fileID: 1528737386}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42688,46 +42301,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1713376344}
   m_Enabled: 1
---- !u!1 &1562080256
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1562080257}
-  - component: {fileID: 1562080258}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042103"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1562080257
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562080256}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2118641061}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1562080258
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562080256}
-  m_Mesh: {fileID: -1900218983047024605, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &1562523744
 GameObject:
   m_ObjectHideFlags: 0
@@ -43252,7 +42825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1575161489
 Transform:
   m_ObjectHideFlags: 0
@@ -43287,7 +42860,7 @@ GameObject:
   - component: {fileID: 1582833307}
   - component: {fileID: 1582833309}
   - component: {fileID: 1582833308}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43659,7 +43232,7 @@ GameObject:
   - component: {fileID: 1595989108}
   - component: {fileID: 1595989110}
   - component: {fileID: 1595989109}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44480,7 +44053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1625821472}
   - component: {fileID: 1625821473}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44536,7 +44109,7 @@ GameObject:
   - component: {fileID: 1629522887}
   - component: {fileID: 1629522889}
   - component: {fileID: 1629522888}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44750,7 +44323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1632857270
 Transform:
   m_ObjectHideFlags: 0
@@ -46388,7 +45961,7 @@ GameObject:
   - component: {fileID: 1700008633}
   - component: {fileID: 1700008635}
   - component: {fileID: 1700008634}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47213,7 +46786,7 @@ GameObject:
   - component: {fileID: 1722630989}
   - component: {fileID: 1722630991}
   - component: {fileID: 1722630990}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48048,9 +47621,9 @@ GameObject:
   - component: {fileID: 1734257141}
   - component: {fileID: 1734257140}
   - component: {fileID: 1734257139}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer_003 (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48097,7 +47670,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!136 &1734257140
 CapsuleCollider:
@@ -48676,7 +48249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1748786328
 Transform:
   m_ObjectHideFlags: 0
@@ -50068,7 +49641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1797864653
 Transform:
   m_ObjectHideFlags: 0
@@ -50249,7 +49822,7 @@ GameObject:
   - component: {fileID: 1801751614}
   - component: {fileID: 1801751616}
   - component: {fileID: 1801751615}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50626,7 +50199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1813318393
 Transform:
   m_ObjectHideFlags: 0
@@ -54456,7 +54029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926475229}
   - component: {fileID: 1926475230}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54526,9 +54099,9 @@ Transform:
   m_GameObject: {fileID: 1936878375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.497, y: 0.111, z: 0.532}
-  m_LocalScale: {x: 0.015625, y: 0.015625, z: 0.006944445}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11, y: 0.11, z: 0.048888892}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2029663513}
   - {fileID: 1497863113}
@@ -55448,7 +55021,7 @@ GameObject:
   - component: {fileID: 1977814677}
   - component: {fileID: 1977814679}
   - component: {fileID: 1977814678}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55520,46 +55093,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977814676}
   m_Mesh: {fileID: 8077376627999728891, guid: c8f806837124f384bb226e50304a458a, type: 3}
---- !u!1 &1982166836
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1982166837}
-  - component: {fileID: 1982166838}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042101"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1982166837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982166836}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 717246279}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1982166838
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982166836}
-  m_Mesh: {fileID: -5630075786770141575, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &1988683404
 GameObject:
   m_ObjectHideFlags: 0
@@ -56358,9 +55891,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2029663513}
-  m_Layer: 10
+  - component: {fileID: 2029663514}
+  - component: {fileID: 2029663515}
+  m_Layer: 0
   m_Name: Dummy
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56374,20 +55909,52 @@ Transform:
   m_GameObject: {fileID: 2029663512}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6364236, y: -2.768118, z: -39.10988}
+  m_LocalPosition: {x: -14.7, y: 4.1, z: 24.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2118641061}
   - {fileID: 783014532}
   - {fileID: 1419182904}
   - {fileID: 1349497543}
-  - {fileID: 717246279}
   - {fileID: 1734257138}
   - {fileID: 528815465}
   - {fileID: 1512300440}
   m_Father: {fileID: 1936878376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2029663514
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029663512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 4.1
+  m_Center: {x: 14.85, y: -3, z: -16.2}
+--- !u!114 &2029663515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029663512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e853d65f35180428eec9c12267082a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCollisionPlayer: 0
 --- !u!1 &2030459323
 GameObject:
   m_ObjectHideFlags: 0
@@ -56547,7 +56114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2039553005
 Transform:
   m_ObjectHideFlags: 0
@@ -56660,7 +56227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2042852066}
   - component: {fileID: 2042852067}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer_003_C02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57196,7 +56763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2058685411}
   - component: {fileID: 2058685412}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WireWall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57252,7 +56819,7 @@ GameObject:
   - component: {fileID: 2058944549}
   - component: {fileID: 2058944551}
   - component: {fileID: 2058944550}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57833,7 +57400,7 @@ GameObject:
   - component: {fileID: 2080754063}
   - component: {fileID: 2080754065}
   - component: {fileID: 2080754064}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57916,7 +57483,7 @@ GameObject:
   - component: {fileID: 2084327509}
   - component: {fileID: 2084327511}
   - component: {fileID: 2084327510}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Wire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58247,7 +57814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091918627}
   - component: {fileID: 2091918628}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Hammer_003_C01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59358,118 +58925,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118555169}
   m_Mesh: {fileID: 1636278447586535312, guid: 49dceee4794a77f4bbe15c15e96f67ed, type: 3}
---- !u!1 &2118641060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2118641061}
-  - component: {fileID: 2118641064}
-  - component: {fileID: 2118641063}
-  - component: {fileID: 2118641062}
-  m_Layer: 10
-  m_Name: Shovel_001
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2118641061
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118641060}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.27878556, y: -0.19573776, z: -0.6498295, w: -0.6794755}
-  m_LocalPosition: {x: 25.038025, y: -4.18035, z: -10.386383}
-  m_LocalScale: {x: 4, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 537289377}
-  - {fileID: 756339427}
-  - {fileID: 1562080257}
-  - {fileID: 545250329}
-  - {fileID: 1120529115}
-  m_Father: {fileID: 2029663513}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.655}
---- !u!136 &2118641062
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118641060}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.02
-  m_Height: 1.6799927
-  m_Direction: 1
-  m_Center: {x: 0.055, y: 0.84, z: 0}
---- !u!23 &2118641063
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118641060}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f089c83691f48394cabdf67f7e964e59, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2118641064
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118641060}
-  m_Mesh: {fileID: -5570736390010699934, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &2121111438
 GameObject:
   m_ObjectHideFlags: 0
@@ -59636,46 +59091,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122102095}
   m_Mesh: {fileID: -4015702184506621846, guid: 4b9888e8896131d4a98e7df5a84ae5e0, type: 3}
---- !u!1 &2122602409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2122602410}
-  - component: {fileID: 2122602411}
-  m_Layer: 10
-  m_Name: "Shovel_001_\u042104"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2122602410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2122602409}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 717246279}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2122602411
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2122602409}
-  m_Mesh: {fileID: -5823062500150932571, guid: 19b356156119e734fb7a25ff0020c0b9, type: 3}
 --- !u!1 &2123692206
 GameObject:
   m_ObjectHideFlags: 0
@@ -59985,7 +59400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2129361404
 Transform:
   m_ObjectHideFlags: 0
@@ -60219,7 +59634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2139203423
 Transform:
   m_ObjectHideFlags: 0

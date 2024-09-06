@@ -160,7 +160,7 @@ public class PlayerMove : MonoBehaviour
 
         if(hit.gameObject.tag == "Trap")
         {
-            
+            hit.gameObject.GetComponent<TrapCollisionEvent>().isCollisionPlayer = true;
         }
 
         if(hit.gameObject.tag == "DangerZone")

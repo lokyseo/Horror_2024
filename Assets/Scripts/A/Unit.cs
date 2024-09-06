@@ -4,10 +4,10 @@ using Unity.VisualScripting;
 
 public class Unit : MonoBehaviour
 {
-
     const float minPathUpdateTime = .2f;
     const float pathUpdateMoveThreshold = .5f;
 
+    Path path;
 
     public GameObject totalWayPoint;
     public int currentWaypoint;
@@ -21,30 +21,38 @@ public class Unit : MonoBehaviour
     float chaseCoolTime;
     
 
-    Path path;
+    float rayDistance;
+    public LayerMask totalLayerMask;
+    public LayerMask playerMask;
+    public LayerMask blockMask;
 
-
-    public float rayDistance;  
-    public LayerMask layerMask; 
-    public Transform rayOrigin; 
-
+    public Transform rayOrigin;
+    public GameObject trap_Object;
     
     private void Awake()
     {
         chaseCoolTime = 3.0f;
         speed = 10.0f;
-        rayDistance = 20.0f;
+        rayDistance = 30.0f;
         isChasing = false;
         currentWaypoint = 0;
         target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
     }
     void Start()
     {
+        
         StartCoroutine(UpdatePath());
     }
 
     void Update()
     {
+        if(trap_Object.GetComponent<TrapCollisionEvent>().isCollisionPlayer && !isChasing)
+        {
+            Debug.Log("트랩 활성화");
+            target = trap_Object.transform;
+            trap_Object.GetComponent<TrapCollisionEvent>().isCollisionPlayer = false;
+        }
+
         Vector3 rayDirection = transform.forward;
         Debug.DrawRay(rayOrigin.position, rayDirection * rayDistance, Color.red);
         RaycastHit hit;
@@ -54,11 +62,21 @@ public class Unit : MonoBehaviour
             speed = 10.0f;
             transform.GetComponent<MeshRenderer>().material.color = Color.black;
 
-            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, layerMask))
+            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, totalLayerMask))
             {
-                target = hit.transform;
-                isChasing = true;
-                chaseCoolTime = 4.0f;
+                int hitLayer = hit.collider.gameObject.layer;
+
+                if (((1 << hitLayer) & playerMask) != 0)
+                {
+                    target = hit.transform;
+                    isChasing = true;
+                    chaseCoolTime = 4.0f;
+                }
+                else if (((1 << hitLayer) & blockMask) != 0)
+                {
+
+                }
+
             }
 
             if (Vector3.Distance(transform.position, target.position) < 5.0f)
@@ -76,10 +94,8 @@ public class Unit : MonoBehaviour
         }
         else
         {
-            Debug.Log("추적중");
-            speed = 20.0f;
+            speed = 15.0f;
             transform.GetComponent<MeshRenderer>().material.color = Color.red;
-
             chaseCoolTime -= Time.deltaTime;
 
             if(chaseCoolTime < 0)
@@ -89,30 +105,34 @@ public class Unit : MonoBehaviour
                 Debug.Log("추적 실패");
             }
 
-
-            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, layerMask))
+            if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, totalLayerMask))
             {
-                target = hit.transform;
-                chaseCoolTime = 4.0f;
+                int hitLayer = hit.collider.gameObject.layer;
+
+                if (((1 << hitLayer) & playerMask) != 0)
+                {
+                    target = hit.transform;
+                    chaseCoolTime = 4.0f;
+                }
+                else if (((1 << hitLayer) & blockMask) != 0)
+                {
+
+                }
+
             }
 
-            if (Vector3.Distance(transform.position, target.position) < 6.0f)
+            if (Vector3.Distance(transform.position, target.position) < 5.0f)
             {
                 target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
                 isChasing = false;
                 Debug.Log("잡았고~");
             }
         }
-        
-
-       
-  
     }
 
-    void OnRaycastHit(RaycastHit hitInfo)
+    public void TrapActivated()
     {
-        Debug.Log("Raycast hit: " + hitInfo.collider.name);
-        // 추가 로직을 여기에 구현 (예: 충돌한 오브젝트에 특정 동작 수행 등)
+
     }
 
 
