@@ -11,14 +11,14 @@ public class Unit : MonoBehaviour
 
     public GameObject totalWayPoint;
     public int currentWaypoint;
-    Transform target;
+    public Transform target;
     public float speed;
     public float turnSpeed = 3;
     public float turnDst = 5;
     public float stoppingDst = 10;
 
     public bool isChasing;
-    float chaseCoolTime;
+    public float chaseCoolTime;
     
 
     float rayDistance;
@@ -70,7 +70,7 @@ public class Unit : MonoBehaviour
                 {
                     target = hit.transform;
                     isChasing = true;
-                    chaseCoolTime = 4.0f;
+                    chaseCoolTime = 3.0f;
                 }
                 else if (((1 << hitLayer) & blockMask) != 0)
                 {
@@ -112,7 +112,7 @@ public class Unit : MonoBehaviour
                 if (((1 << hitLayer) & playerMask) != 0)
                 {
                     target = hit.transform;
-                    chaseCoolTime = 4.0f;
+                    chaseCoolTime = 3.0f;
                 }
                 else if (((1 << hitLayer) & blockMask) != 0)
                 {
