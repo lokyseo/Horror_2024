@@ -13,6 +13,7 @@ public class Acquire_Item : MonoBehaviour
     {
         isKeyHave = false;
     }
+
     void Update()
     {
         Ray ray = new Ray(transform.position, transform.forward);

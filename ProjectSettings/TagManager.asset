@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - DangerZone
   - Key
+  - Door
   layers:
   - Default
   - TransparentFX
