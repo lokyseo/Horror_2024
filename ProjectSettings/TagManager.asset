@@ -8,6 +8,7 @@ TagManager:
   - Car
   - Trap
   - DangerZone
+  - Key
   layers:
   - Default
   - TransparentFX
