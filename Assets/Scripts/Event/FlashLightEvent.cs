@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlashLightEvent : MonoBehaviour
 {
     public Light targetLight; // °¨ÁöÇÒ ±¤¿ø
-    private Renderer objectRenderer;
+    Renderer enemy_Renderer;
     public float targetTime;
     float exitTime;
 
@@ -16,13 +16,12 @@ public class FlashLightEvent : MonoBehaviour
         unit_Script = transform.GetComponent<Unit>();
 
         targetTime = 3.0f;
-        objectRenderer = GetComponent<Renderer>();
-        exitTime = 10.0f;
+        exitTime = 5.0f;
     }
 
     void Update()
     {
-        if (IsObjectLit() && targetLight.transform.parent.gameObject.activeSelf)
+        if (IsObjectLit())
         {
             OnLightEnter();
         }
@@ -30,40 +29,34 @@ public class FlashLightEvent : MonoBehaviour
         {
             OnLightExit();
         }
-
-
     }
     public bool IsObjectLit()
     {
-        Vector3 lightDirection = (transform.position - targetLight.transform.position).normalized;
-        float dotProduct = Vector3.Dot(lightDirection, targetLight.transform.forward);
+        enemy_Renderer = GetComponent<Renderer>();
 
-        return dotProduct < 0.9f;
+        if(enemy_Renderer.isVisible && targetLight.transform.parent.gameObject.activeSelf)
+        {
+            float distanceToLight = Vector3.Distance(targetLight.transform.position, transform.position);
 
-        //if (dotProduct < 0.9f)
-        //{
-        //    RaycastHit hit;
-        //    if (Physics.Raycast(targetLight.transform.position, targetLight.transform.forward, out hit))
-        //    {
-        //
-        //        if (hit.collider.tag != "Map" && hit.collider != null)
-        //        {
-        //            return true;
-        //        }
-        //
-        //    }
-        //    return false;
-        //}
-        //else
-        //{
-        //    return false;
-        //}
-
-
+            if(distanceToLight <= targetLight.range)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
     }
 
     void OnLightEnter()
     {
+        Debug.Log("ºñÃçÁö´Â Áß");
+
         targetTime -= Time.deltaTime;
 
         if (targetTime < 0 && !unit_Script.isChasing)
