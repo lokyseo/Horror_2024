@@ -69,7 +69,7 @@ public class Unit : MonoBehaviour
                 {
                     target = hit.transform;
                     isChasing = true;
-                    chaseCoolTime = 3.0f;
+                    chaseCoolTime = 5.0f;
                 }
                 else if (((1 << hitLayer) & blockMask) != 0)
                 {
@@ -111,7 +111,7 @@ public class Unit : MonoBehaviour
                 if (((1 << hitLayer) & playerMask) != 0)
                 {
                     target = hit.transform;
-                    chaseCoolTime = 3.0f;
+                    chaseCoolTime = 4.0f;
                 }
                 else if (((1 << hitLayer) & blockMask) != 0)
                 {
@@ -120,7 +120,7 @@ public class Unit : MonoBehaviour
 
             }
 
-            if (Vector3.Distance(transform.position, target.position) < 5.0f)
+            if (Vector3.Distance(transform.position, target.position) < 8.0f)
             {
                 target = totalWayPoint.transform.GetChild(currentWaypoint).transform;
                 isChasing = false;

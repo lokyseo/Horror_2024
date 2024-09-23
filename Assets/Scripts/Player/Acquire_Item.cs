@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Acquire_Item : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Acquire_Item : MonoBehaviour
     float interactableDistance;
 
     public bool isKeyHave;
+    public Image inven_Image;
+    public Sprite key_Sprite;
 
     private void Start()
     {
@@ -27,9 +30,33 @@ public class Acquire_Item : MonoBehaviour
                 {
                     isKeyHave = true;
                     Destroy(hit.transform.gameObject);
+                    inven_Image.sprite = key_Sprite;
                 }
+            }
 
+            if(hit.transform.CompareTag("Door"))
+            {
+                if(hit.transform.GetComponent<DoorControl>().isLocked)
+                {
+                    if (Input.GetKeyDown(KeyCode.E) && isKeyHave)
+                    {
+                        hit.transform.GetComponent<DoorControl>().isLocked = false;
+                        isKeyHave = false;
+                        inven_Image.sprite = null;
+                    }
+                    else
+                    {
 
+                    }
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        hit.transform.GetComponent<DoorControl>().isOpen = !hit.transform.GetComponent<DoorControl>().isOpen;
+                    }
+                }
+                
             }
         }
         Debug.DrawRay(transform.position, transform.forward * detectionRange, Color.green);
