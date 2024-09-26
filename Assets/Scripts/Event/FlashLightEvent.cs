@@ -32,7 +32,7 @@ public class FlashLightEvent : MonoBehaviour
     }
     public bool IsObjectLit()
     {
-        enemy_Renderer = GetComponent<Renderer>();
+        enemy_Renderer = GetComponentInChildren<Renderer>();
 
         if(enemy_Renderer.isVisible && targetLight.transform.parent.gameObject.activeSelf)
         {

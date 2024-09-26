@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,15 +132,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 302ff600687524c46961454b71be8957, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.863
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 302ff600687524c46961454b71be8957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 302ff600687524c46961454b71be8957, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.405
+      value: -24.478
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 302ff600687524c46961454b71be8957, type: 3}
       propertyPath: m_LocalRotation.w
@@ -809,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &447040776
 Transform:
   m_ObjectHideFlags: 0
@@ -1289,8 +1288,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.6792453, g: 0, b: 0, a: 1}
-  m_Intensity: 1000
-  m_Range: 200
+  m_Intensity: 1427.66
+  m_Range: 7179.9
   m_SpotAngle: 55.276543
   m_InnerSpotAngle: 19.274426
   m_CookieSize: 10
@@ -2027,12 +2026,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &975367380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLight: {fileID: 2144279137}
+  targetTime: 0
 --- !u!1 &1017176061
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,7 +3918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
   footSound: {fileID: 951746313}
-  moveSpeed: 20
+  moveSpeed: 30
 --- !u!1001 &1681755450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4070,7 +4070,7 @@ Transform:
   m_GameObject: {fileID: 1814009955}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.723, y: 1.29, z: -20.047}
+  m_LocalPosition: {x: -7, y: 1.29, z: -20.047}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:

@@ -59,7 +59,6 @@ public class Unit : MonoBehaviour
         if (!isChasing)
         {
             speed = 10.0f;
-            transform.GetComponent<MeshRenderer>().material.color = Color.black;
 
             if (Physics.Raycast(rayOrigin.position, rayDirection, out hit, rayDistance, totalLayerMask))
             {
@@ -94,7 +93,6 @@ public class Unit : MonoBehaviour
         else
         {
             speed = 15.0f;
-            transform.GetComponent<MeshRenderer>().material.color = Color.red;
             chaseCoolTime -= Time.deltaTime;
 
             if(chaseCoolTime < 0)
